@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人设计师作品集 | Portfolio</title>
     <style>
-        /* --- 完全保留你要求的 CSS 样式 --- */
         :root {
             --bg: #ffffff;
             --text: #111111;
@@ -14,39 +13,11 @@
             --dark-footer: #2a2a2a;
             --radius: 12px;
             --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            /* 查看全部作品按钮样式 */
-.view-all-container {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.btn-all-works {
-    display: inline-block;
-    padding: 15px 40px;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: var(--transition);
-}
-
-.btn-all-works:hover {
-    background: #000;
-    color: #fff;
-    transform: translateY(-3px);
-}
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { 
-            font-family: "Inter", -apple-system, sans-serif; 
-            background: var(--bg); color: var(--text); 
-            line-height: 1.6; overflow-x: hidden;
-        }
+        body { font-family: "Inter", -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
         /* 导航栏 */
         .nav-bar {
@@ -54,78 +25,67 @@
             position: fixed; width: 100%; padding: 0 5%; z-index: 1000;
             background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px);
         }
-        .logo-img { height: 28px; width: auto; display: block; }
+        .logo-img { height: 28px; width: auto; }
         .nav-links { display: flex; gap: 40px; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text); font-size: 13px; font-weight: 500; letter-spacing: 1px; transition: opacity 0.3s; }
-        .nav-links a:hover { opacity: 0.6; }
+        .nav-links a { text-decoration: none; color: var(--text); font-size: 13px; font-weight: 500; letter-spacing: 1px; }
 
         /* 全屏 Banner */
         .full-banner { height: 100vh; position: relative; width: 100%; overflow: hidden; }
         .full-banner img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.65); }
-        .banner-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; width: 100%; padding: 0 20px; }
-        .banner-content h1 { font-size: clamp(2.2rem, 6vw, 4.2rem); font-weight: 200; letter-spacing: -1px; margin-bottom: 10px; }
-        .banner-content p { font-size: 14px; letter-spacing: 4px; text-transform: uppercase; opacity: 0.8; }
+        .banner-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; width: 100%; }
+        .banner-content h1 { font-size: clamp(2.2rem, 6vw, 4.2rem); font-weight: 200; letter-spacing: -1px; }
 
-        /* 内容容器 */
+        /* 主体容器 */
         .main-content { max-width: 1200px; margin: 0 auto; padding: 120px 5%; }
         .section-label { font-size: 11px; letter-spacing: 3px; color: #bbb; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; text-transform: uppercase; }
 
-        /* 关于我 - 三栏 */
+        /* 关于我 */
         .about-grid { display: grid; grid-template-columns: 2.2fr 1.2fr 0.8fr; gap: 60px; margin-bottom: 150px; }
-        .resume-item { display: flex; gap: 20px; border-bottom: 1px solid #f5f5f5; padding: 25px 0; cursor: pointer; }
-        .year { font-size: 11px; color: #999; min-width: 80px; padding-top: 6px; }
-        .resume-title { font-size: 17px; font-weight: 400; transition: color 0.3s; }
-        .resume-detail { max-height: 0; overflow: hidden; transition: var(--transition); color: #666; font-size: 14px; line-height: 1.7; }
-        .resume-item.active .resume-detail { max-height: 300px; margin-top: 15px; }
-        .resume-item.active .resume-title { color: var(--accent); }
+        .resume-item { border-bottom: 1px solid #f5f5f5; padding: 25px 0; cursor: pointer; }
+        .resume-item .year { font-size: 11px; color: #999; margin-right: 20px; }
+        .resume-detail { max-height: 0; overflow: hidden; transition: var(--transition); color: #666; font-size: 14px; }
+        .resume-item.active .resume-detail { max-height: 200px; margin-top: 15px; }
 
-        .quote-box { font-size: 18px; font-style: italic; border-left: 2px solid #000; padding-left: 15px; margin-bottom: 30px; line-height: 1.5; }
-        .mood-photo { width: 100%; border-radius: var(--radius); overflow: hidden; }
-        .mood-photo img { width: 100%; display: block; filter: grayscale(100%); transition: 0.8s; }
+        .quote-box { font-size: 18px; font-style: italic; border-left: 2px solid #000; padding-left: 15px; margin-bottom: 30px; }
+        .mood-photo img { width: 100%; border-radius: var(--radius); filter: grayscale(100%); transition: 0.8s; }
         .mood-photo:hover img { filter: grayscale(0); }
 
-        .skill-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
-        .skill-tags li { font-size: 11px; background: var(--gray); padding: 6px 14px; border-radius: 4px; color: #555; }
-
-        /* 作品网格 - 16:9 */
+        /* 作品展示网格 */
         .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         .work-card { text-decoration: none; color: inherit; }
         .img-16-9 { width: 100%; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; background: #eee; }
         .img-16-9 img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
-        .work-card:hover .img-16-9 img { transform: scale(1.05); }
-        .work-card h4 { margin-top: 18px; font-size: 15px; font-weight: 500; }
+        .work-card:hover img { transform: scale(1.05); }
 
-        .btn-container { text-align: center; margin-top: 60px; }
-        .btn-more { display: inline-block; padding: 16px 45px; border: 1px solid #000; text-decoration: none; color: #000; font-size: 13px; transition: 0.3s; border-radius: 2px; }
-        .btn-more:hover { background: #000; color: #fff; }
+        /* --- 新增：查看全部作品按钮样式 --- */
+        .view-all-container { text-align: center; margin-top: 60px; }
+        .btn-all-works { 
+            display: inline-block; padding: 16px 45px; border: 1px solid #000; 
+            text-decoration: none; color: #000; font-size: 12px; letter-spacing: 2px; 
+            font-weight: bold; text-transform: uppercase; transition: var(--transition);
+        }
+        .btn-all-works:hover { background: #000; color: #fff; transform: translateY(-3px); }
 
-        .footer-dark { background: var(--dark-footer); min-height: 33.3vh; width: 100%; display: flex; align-items: center; justify-content: center; color: white; padding: 60px 5%; }
-        .footer-inner { width: 100%; max-width: 1200px; display: flex; justify-content: space-between; align-items: center; }
-        .contact-info { text-align: right; line-height: 2.2; font-size: 14px; color: #bbb; }
+        /* 底部 */
+        .footer-dark { background: var(--dark-footer); color: white; padding: 80px 5%; text-align: center; }
 
         @media (max-width: 900px) {
-            .about-grid { grid-template-columns: 1fr; }
-            .work-grid { grid-template-columns: 1fr; }
-            .footer-inner { flex-direction: column; text-align: center; gap: 40px; }
-            .contact-info { text-align: center; }
+            .about-grid, .work-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-
     <nav class="nav-bar">
-        <div class="logo">
-            <img src="https://img.icons8.com/ios-filled/50/000000/triangle.png" alt="Logo" class="logo-img">
-        </div>
+        <div style="font-weight:900; letter-spacing:2px;">DESIGNER ALPHA</div>
         <ul class="nav-links">
-            <li><a href="#work">项目展示集</a></li>
+            <li><a href="#work">项目集</a></li>
             <li><a href="#about">关于我</a></li>
             <li><a href="#contact">联系方式</a></li>
         </ul>
     </nav>
 
     <section class="full-banner">
-        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000" alt="Banner Image">
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=2000">
         <div class="banner-content">
             <h1>探索美学与逻辑的边界</h1>
             <p>UI/UX Designer & Creative Director</p>
@@ -136,23 +96,24 @@
         <section id="about" class="about-grid">
             <div class="experience-col">
                 <h2 class="section-label">Experience</h2>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <span class="year">2023 - 2026</span>
-                        <div class="resume-info">
-                            <h3 class="resume-title">高级交互设计师 @ 腾讯科技</h3>
-                            <div class="resume-detail"><p>主导核心产品视觉迭代...</p></div>
-                        </div>
-                    </div>
-                    </div>
+                <div class="resume-item">
+                    <span class="year">2023 - 2026</span>
+                    <h3 style="display:inline-block">高级交互设计师 @ 腾讯科技</h3>
+                    <div class="resume-detail">主导核心产品视觉迭代。</div>
+                </div>
+                <div class="resume-item">
+                    <span class="year">2020 - 2023</span>
+                    <h3 style="display:inline-block">视觉设计师 @ 字节跳动</h3>
+                    <div class="resume-detail">负责品牌数字化转型。</div>
+                </div>
             </div>
             <div class="personal-col">
-                <div class="quote-box"><p>“好的设计应该是隐形的。”</p></div>
+                <div class="quote-box">“好的设计应该是隐形的。”</div>
                 <div class="mood-photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"></div>
             </div>
             <div class="skills-col">
                 <h2 class="section-label">Skills</h2>
-                <ul class="skill-tags"><li>UI/UX Design</li><li>Prototyping</li><li>Figma</li></ul>
+                <p>UI/UX Design / Figma / Motion</p>
             </div>
         </section>
 
@@ -161,53 +122,32 @@
             <div class="work-grid">
                 <a href="coffee.html" class="work-card">
                     <div class="img-16-9"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1000"></div>
-                    <h4>智能移动终端交互系统</h4>
+                    <h4>新势力咖啡品牌全案</h4>
                 </a>
-                <a href="#" class="work-card">
+                <div class="work-card">
                     <div class="img-16-9"><img src="https://images.unsplash.com/photo-1618761767630-0114736b193f?auto=format&fit=crop&q=80&w=1000"></div>
                     <h4>品牌视觉重塑手册</h4>
-                </a>
-                <a href="#" class="work-card">
+                </div>
+                <div class="work-card">
                     <div class="img-16-9"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=1000"></div>
                     <h4>极简主义网页排版研究</h4>
-                </a>
+                </div>
+            </div>
+
+            <div class="view-all-container">
+                <a href="works.html" class="btn-all-works">查看全部作品 / View All Works</a>
             </div>
         </section>
     </div>
 
     <footer id="contact" class="footer-dark">
-        <div class="footer-inner">
-            <div class="contact-text"><h2>期待与您共同创造</h2></div>
-            <div class="contact-info">
-                <p>Email: designer@portfolio.com</p>
-                <p>WeChat: Design_Alpha</p>
-            </div>
-<div class="view-all-container">
-    <a href="works.html" class="btn-all-works">查看全部作品 / View All Works</a>
-</div>        </div>
-
+        <h2>期待与您共同创造</h2>
+        <p style="margin-top:20px; color:#bbb">Email: designer@portfolio.com</p>
     </footer>
 
     <script>
-        // 保持你原有的所有脚本逻辑
         document.querySelectorAll('.resume-item').forEach(item => {
-            item.addEventListener('click', () => { item.classList.toggle('active'); });
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = "1";
-                    entry.target.style.transform = "translateY(0)";
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = "0";
-            section.style.transform = "translateY(20px)";
-            section.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-            observer.observe(section);
+            item.addEventListener('click', () => item.classList.toggle('active'));
         });
     </script>
 </body>
