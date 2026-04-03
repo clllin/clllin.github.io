@@ -3,126 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESIGNER ALPHA | Official Portfolio</title>
+    <title>Project Detail | DESIGNER ALPHA</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
     <style>
-        :root {
-            --bg: #ffffff;
-            --text: #000000;
-            --secondary: #888888;
-            --margin: 6vw;
-        }
-
+        :root { --margin: 6vw; --gap: 4vh; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { 
-            font-family: 'Inter', -apple-system, sans-serif; 
-            background: var(--bg); color: var(--text); 
-            -webkit-font-smoothing: antialiased;
-        }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: #111; line-height: 1.6; }
 
-        /* 导航栏 - 极简主义 */
+        /* 导航 */
         .nav-bar {
-            position: fixed; top: 0; width: 100%;
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 40px var(--margin); z-index: 1000;
-            background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);
+            position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between;
+            padding: 30px var(--margin); z-index: 1000; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
         }
-        .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; text-decoration: none; color: #000; }
-        .nav-links a { text-decoration: none; color: var(--secondary); margin-left: 30px; font-size: 0.9rem; transition: 0.3s; }
-        .nav-links a:hover { color: #000; }
+        .nav-bar a { text-decoration: none; color: #000; font-weight: 800; font-size: 0.9rem; }
 
-        /* Hero 区域 - 压迫感大字报 */
-        .hero {
-            height: 75vh; display: flex; align-items: center;
-            padding: 0 var(--margin); margin-top: 100px;
+        /* 项目头部信息 */
+        .project-header {
+            padding: 150px var(--margin) 80px;
+            max-width: 1200px;
         }
-        .hero h1 {
-            font-size: clamp(48px, 10vw, 110px);
-            font-weight: 800; line-height: 0.95; letter-spacing: -0.04em;
-        }
+        .project-header h1 { font-size: clamp(32px, 5vw, 64px); font-weight: 800; margin-bottom: 20px; letter-spacing: -2px; }
+        .project-meta { display: flex; gap: 40px; color: #888; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .meta-item span { display: block; color: #111; font-weight: 600; margin-bottom: 5px; }
 
-        /* 项目网格 - 严谨对齐 */
-        .work-grid {
-            padding: 0 var(--margin) 10vh;
-            display: grid; grid-template-columns: repeat(2, 1fr);
-            gap: 8vh 40px;
-        }
+        /* 内容区域 - 大图流 */
+        .content-flow { padding: 0 var(--margin) 100px; display: flex; flex-direction: column; gap: var(--gap); }
+        .content-flow img { width: 100%; display: block; border-radius: 2px; }
+        
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); }
 
-        .project-card {
-            text-decoration: none; color: inherit;
-            display: block; cursor: pointer;
+        /* 文字介绍段落 */
+        .description-block {
+            padding: 60px 0; max-width: 800px; font-size: 1.2rem; color: #444;
         }
 
-        /* 图片包裹层 - 锁定 16:9 且带悬停动画 */
-        .img-wrap {
-            width: 100%; aspect-ratio: 16 / 9;
-            overflow: hidden; background: #f4f4f4;
-            margin-bottom: 25px; border-radius: 2px;
+        /* 页脚返回 */
+        .footer-nav {
+            padding: 100px var(--margin); text-align: center; border-top: 1px solid #eee;
         }
-        .img-wrap img {
-            width: 100%; height: 100%; object-fit: cover;
-            transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        .back-btn {
+            font-size: 2rem; font-weight: 800; text-decoration: none; color: #000;
+            transition: 0.3s; display: inline-block;
         }
-        .project-card:hover img { transform: scale(1.06); }
+        .back-btn:hover { transform: translateY(-5px); opacity: 0.7; }
 
-        .project-info h3 { font-size: 1.4rem; font-weight: 600; margin-bottom: 4px; }
-        .project-info p { font-size: 1rem; color: var(--secondary); }
-
-        /* 移动端适配 */
-        @media (max-width: 900px) {
-            :root { --margin: 5%; }
-            .work-grid { grid-template-columns: 1fr; gap: 50px; }
-            .hero { height: 50vh; }
-            .hero h1 { font-size: 12vw; }
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; }
+            .project-meta { flex-direction: column; gap: 20px; }
         }
     </style>
 </head>
 <body>
 
     <nav class="nav-bar">
-        <a href="index.html" class="logo">DESIGNER ALPHA</a>
-        <div class="nav-links">
-            <a href="index.html">Work</a>
-            <a href="#">About</a>
-        </div>
+        <a href="index.html">← BACK TO WORK</a>
+        <a href="index.html" style="letter-spacing: 2px;">DESIGNER ALPHA</a>
     </nav>
 
-    <header class="hero">
-        <h1>Creative Director & <br>Visual Designer.</h1>
+    <header class="project-header">
+        <h1>New Force Coffee <br>Branding System.</h1>
+        <div class="project-meta">
+            <div class="meta-item"><span>SERVICE</span>Art Direction / Identity</div>
+            <div class="meta-item"><span>YEAR</span>2026</div>
+            <div class="meta-item"><span>CLIENT</span>N.F.C Co.</div>
+        </div>
+        <div class="description-block">
+            这是关于项目的简短介绍。在这里你可以描述你的设计思路、解决的问题以及最终达成的视觉效果。保持简洁，让图片说话。
+        </div>
     </header>
 
-    <main class="work-grid">
-        <a href="coffee.html" class="project-card">
-            <div class="img-wrap">
-                <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1600&q=80" alt="Work 1">
-            </div>
-            <div class="project-info">
-                <h3>New Force Coffee</h3>
-                <p>Brand Identity & Direction</p>
-            </div>
-        </a>
+    <main class="content-flow">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80" alt="Detail 1">
+        
+        <div class="two-col">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80" alt="Detail 2">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80" alt="Detail 3">
+        </div>
 
-        <a href="coffee.html" class="project-card">
-            <div class="img-wrap">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=80" alt="Work 2">
-            </div>
-            <div class="project-info">
-                <h3>Digital Core</h3>
-                <p>UI/UX Experience Design</p>
-            </div>
-        </a>
-
-        <a href="coffee.html" class="project-card">
-            <div class="img-wrap">
-                <img src="https://images.unsplash.com/photo-1454165833767-027ff770378a?auto=format&fit=crop&w=1600&q=80" alt="Work 3">
-            </div>
-            <div class="project-info">
-                <h3>Editorial Series</h3>
-                <p>Concept Photography</p>
-            </div>
-        </a>
+        <img src="https://images.unsplash.com/photo-1497933321188-941f9ad36b12?auto=format&fit=crop&w=2000&q=80" alt="Detail 4">
     </main>
+
+    <footer class="footer-nav">
+        <p style="color: #888; margin-bottom: 20px;">Next Project</p>
+        <a href="index.html" class="back-btn">Digital Core →</a>
+    </footer>
 
 </body>
 </html>
