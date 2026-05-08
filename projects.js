@@ -1,24 +1,27 @@
-// 这是你的全站唯一数据中心
+/**
+ * 全站项目数据库
+ * 提示：新项目请写在数组的最前面，这样首页会自动显示最新作品
+ */
 const ALL_PROJECTS = [
     {
         id: "camping",
-        title: "内蒙古露营小镇",
-        date: "2024-05", // 靠上的会显示在首页
-        category: "品牌全案",
-        cover: "封面.jpg", // 既是缩略图，也是详情页头图
+        title: "内蒙古露营小镇——奇幻星球项目策划品牌设计方案",
+        date: "2024-05",
+        category: "品牌全案 / 视觉识别",
+        client: "露营小镇项目组",
+        services: "品牌定位, Logo设计, VI系统",
+        role: "主设计师",
+        cover: "封面.jpg", // 首页、列表页、详情页头图共用此图
         url: "coffee.html",
-        description: "针对内蒙古文旅特色的奇幻星球策划...",
-        details: ['详情1.jpg', '详情2.jpg', '详情3.jpg']
-    },
-    {
-        id: "tech",
-        title: "未来实验室",
-        date: "2024-04",
-        category: "视觉设计",
-        cover: "tech_cover.jpg",
-        url: "tech.html",
-        description: "探索数字艺术的边界...",
-        details: ['t1.jpg', 't2.jpg']
+        description: "针对内蒙古文旅特色的奇幻星球策划，通过几何图形重构，传达探索未知、拒绝平庸的态度。",
+        details: [
+            '详情1.jpg',
+            '详情2.jpg',
+            '详情3.jpg',
+            '详情4.jpg',
+            '详情5.jpg',
+            '详情6.jpg'
+        ]
     }
-    // 以后增加项目，只需按格式把这段代码复制粘贴到最上面
+    // 以后增加新项目，只需复制上面的 { ... } 块并粘贴到这里之前
 ];
