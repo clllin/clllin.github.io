@@ -130,35 +130,30 @@
        /**
  * [配置区] 只需要修改这里的数据
  */
+// 请找到文件底部的这部分脚本并替换
 const projectConfig = {
-    // 1. 项目标题（会显示在页面最上方）
-    title: "奇幻星球——内蒙古露营小镇品牌策划全案", 
-
-    // 2. 项目分类
-    category: "品牌全案 / 视觉识别系统 / 文旅策划",
-
-    // 3. 项目详情信息栏
-    client: "露营小镇项目组",
+    title: "内蒙古露营小镇品牌设计方案",
+    category: "品牌全案 / 视觉识别",
+    client: "个人项目",
     date: "2024",
-    services: "品牌定位, Logo设计, VI系统, 导视系统",
-    role: "主设计师 / 策略策划",
-
-    // 4. 设计叙事（Insight）部分
+    services: "Logo, UI, Package",
+    role: "主设计师",
     introTitle: "设计洞察 / Insight",
-    introText: "针对内蒙古文旅特色，我们提取了‘奇幻’与‘星球’的视觉元素，通过几何图形的重构，传达品牌探索未知、拒绝平庸的态度。在快节奏的都市生活中，为用户营造一个超现实的逃离空间。",
-
-    // 5. 顶部横幅大图（填入你上传的封面文件名）
-    bannerImage: '封面.jpg', 
-
-    // 6. 项目细节长图列表（填入你上传的所有详情页文件名）
+    introText: "提取‘奇幻’与‘星球’元素，为用户营造一个超现实的逃离空间。",
+    
+    // 关键修改：这里也改用 active-cover.jpg
+    bannerImage: 'active-cover.jpg', 
+    
     galleryImages: [
-        '详情1.jpg',
+        '详情1.jpg', 
         '详情2.jpg',
         '详情3.jpg',
         '详情4.jpg',
-        '详情5.jpg',
-        '详情6.jpg'
+        '详情5.jpg'
     ],
+    nextProjectName: "返回作品列表",
+    nextProjectUrl: "works.html"
+};
 
     // 7. 底部“下一个项目”跳转设置
     nextProjectName: "返回作品列表",
