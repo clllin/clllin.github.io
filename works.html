@@ -22,7 +22,7 @@
         .logo { font-weight: 900; letter-spacing: 2px; font-size: 1.2rem; color: #000; text-decoration: none; }
         .nav-links { display: flex; list-style: none; gap: 30px; }
         .nav-links a { text-decoration: none; color: #666; font-size: 14px; transition: 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: #000; font-weight: bold; }
+        .nav-links a.active { color: #000; font-weight: bold; }
 
         /* 3. 布局样式 */
         .main-content { padding: 60px 5%; max-width: 1600px; margin: 0 auto; }
@@ -42,18 +42,18 @@
         }
         .work-grid::-webkit-scrollbar { display: none; }
         
-        /* --- 关键修正：统一卡片宽度 --- */
+        /* --- 核心：统一卡片宽度 --- */
         .work-card { 
-            flex: 0 0 420px; /* 确保所有栏目的矩形大小完全一致 */
+            flex: 0 0 420px; 
             text-decoration: none; color: inherit; transition: 0.4s; 
         }
         .work-card:hover { transform: translateY(-8px); }
         
-        /* --- 关键修正：圆角矩形设定 --- */
+        /* --- 核心：圆角矩形 --- */
         .img-16-9 { 
             width: 100%; aspect-ratio: 16/9; background: #f7f7f7; 
             overflow: hidden; margin-bottom: 15px; 
-            border-radius: 12px; /* 这里控制圆角的大小 */
+            border-radius: 12px; 
         }
         .img-16-9 img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .work-card:hover img { transform: scale(1.05); }
@@ -71,7 +71,7 @@
         .btn-prev { left: -22px; }
         .btn-next { right: -22px; }
 
-        /* 6. 页脚样式 */
+        /* 6. 页脚 */
         .footer-dark { background-color: #111; color: #fff; padding: 100px 5% 50px; margin-top: 100px; }
         .footer-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 60px; }
         .footer-slogan { font-size: 32px; font-weight: 600; line-height: 1.4; }
@@ -107,7 +107,6 @@
                 <a href="coffee.html" class="work-card"><div class="img-16-9"><img src="active-cover.jpg"></div><h4>内蒙古露营小镇项目策划</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/a2/800/450"></div><h4>科技实验室视觉建设</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/a3/800/450"></div><h4>买手店品牌孵化案例</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/a4/800/450"></div><h4>高端月子中心品牌重构</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-1', 1)">→</button>
         </div>
@@ -137,7 +136,6 @@
             <div class="work-grid" id="grid-3">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c1/800/450"></div><h4>年度艺术季展览画册</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c2/800/450"></div><h4>地产项目高端营销折页</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c3/800/450"></div><h4>书籍版式研究</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-3', 1)">→</button>
         </div>
@@ -150,8 +148,8 @@
         <div class="scroll-wrapper">
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-4', -1)">←</button>
             <div class="work-grid" id="grid-4">
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d1/800/450"></div><h4>未来科技展厅导视</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d2/800/450"></div><h4>快闪店空间视觉营造</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d1/800/450"></div><h4>未来科技展厅导视系统</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d2/800/450"></div><h4>艺术博览会空间视觉</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-4', 1)">→</button>
         </div>
@@ -165,7 +163,7 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-5', -1)">←</button>
             <div class="work-grid" id="grid-5">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e1/800/450"></div><h4>2026 全球设计周主视觉</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e2/800/450"></div><h4>音乐节全场域视觉延展</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e2/800/450"></div><h4>夏季音乐节视觉全延展</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-5', 1)">→</button>
         </div>
@@ -178,8 +176,8 @@
         <div class="scroll-wrapper">
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-6', -1)">←</button>
             <div class="work-grid" id="grid-6">
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>金融 App 数字化重构</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f2/800/450"></div><h4>智能车载中控 UI 设计</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>数字化金融App重构</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f2/800/450"></div><h4>智能车载交互界面设计</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6', 1)">→</button>
         </div>
@@ -200,10 +198,9 @@
 </footer>
 
 <script>
-    // 让左右滑动按钮生效
     function scrollGrid(gridId, direction) {
         const grid = document.getElementById(gridId);
-        const scrollAmount = 450; // 滚动距离略大于卡片宽度，包含间距
+        const scrollAmount = 450; 
         grid.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
 </script>
