@@ -1,4 +1,4 @@
-©<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
         .cat-title { font-size: 26px; font-weight: 600; margin-bottom: 5px; color: #000; }
         .cat-desc { font-size: 12px; color: #999; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* 4. 横向滚动系统 - 支持无限扩充 */
+        /* 4. 横向滚动系统 */
         .scroll-wrapper { position: relative; display: flex; align-items: center; }
         .work-grid { 
             display: flex; 
@@ -42,13 +42,12 @@
             overflow-x: auto; 
             scroll-behavior: smooth; 
             padding: 10px 0 30px 0; 
-            scrollbar-width: none; /* Firefox */
+            scrollbar-width: none; 
         }
-        .work-grid::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
+        .work-grid::-webkit-scrollbar { display: none; }
         
-        /* 统一卡片宽度 & 圆角矩形 */
         .work-card { 
-            flex: 0 0 420px; /* 固定宽度，防止被挤压，实现无限横向排列 */
+            flex: 0 0 420px; 
             text-decoration: none; color: inherit; transition: 0.4s; 
         }
         .work-card:hover { transform: translateY(-8px); }
@@ -56,7 +55,7 @@
         .img-16-9 { 
             width: 100%; aspect-ratio: 16/9; background: #f7f7f7; 
             overflow: hidden; margin-bottom: 15px; 
-            border-radius: 12px; /* 圆角矩形设定 */
+            border-radius: 12px; 
         }
         .img-16-9 img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .work-card:hover img { transform: scale(1.05); }
@@ -74,12 +73,7 @@
         .btn-prev { left: -22px; }
         .btn-next { right: -22px; }
 
-        /* 6. 页脚 */
         .footer-dark { background-color: #111; color: #fff; padding: 100px 5% 50px; margin-top: 100px; }
-        .footer-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 60px; }
-        .footer-slogan { font-size: 32px; font-weight: 600; line-height: 1.4; }
-        .contact-item { border-left: 1px solid #333; padding-left: 20px; }
-        .item-value { font-size: 18px; color: #eee; }
 
         @media (max-width: 768px) {
             .work-card { flex: 0 0 300px; }
@@ -100,61 +94,60 @@
 
 <div class="main-content">
     
-<section class="category-block">
-    <div class="category-header">
-        <div><h2 class="cat-title">品牌全案</h2><p class="cat-desc">Brand Strategy & Identity</p></div>
-    </div>
-    <div class="scroll-wrapper">
-        <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-1', -1)">←</button>
-        <div class="work-grid" id="grid-1">
-            <a href="coffee.html" class="work-card">
-                <div class="img-16-9">
-                    <img src="封面.jpg" alt="内蒙古露营小镇项目策划">
-                </div>
-                <h4>内蒙古露营小镇项目策划</h4>
-            </a>
-
-            <a href="project2.html" class="work-card">
-                <div class="img-16-9">
-                    <img src="详情1.jpg" alt="科技实验室视觉建设">
-                </div>
-                <h4>科技实验室视觉建设</h4>
-            </a>
-            
-            </div>
-        <button class="scroll-btn btn-next" onclick="scrollGrid('grid-1', 1)">→</button>
-    </div>
-</section>
-   <section class="category-block">
+    <section class="category-block">
         <div class="category-header">
             <div><h2 class="cat-title">品牌全案</h2><p class="cat-desc">Brand Strategy & Identity</p></div>
         </div>
         <div class="scroll-wrapper">
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-1', -1)">←</button>
             <div class="work-grid" id="grid-1">
-                
                 <a href="coffee.html" class="work-card">
                     <div class="img-16-9"><img src="封面.jpg" alt="内蒙古露营小镇项目策划"></div>
                     <h4>内蒙古露营小镇项目策划</h4>
                 </a>
-
                 <a href="project2.html" class="work-card">
                     <div class="img-16-9"><img src="详情1.jpg" alt="科技实验室视觉建设"></div>
                     <h4>科技实验室视觉建设</h4>
                 </a>
-
                 <a href="project3.html" class="work-card">
                     <div class="img-16-9"><img src="详情2.jpg" alt="买手店品牌孵化"></div>
                     <h4>买手店品牌孵化案例</h4>
                 </a>
-
                 <a href="project4.html" class="work-card">
                     <div class="img-16-9"><img src="详情3.jpg" alt="高端月子中心重构"></div>
                     <h4>高端月子中心品牌重构</h4>
                 </a>
-
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-1', 1)">→</button>
+        </div>
+    </section>
+
+    <section class="category-block">
+        <div class="category-header">
+            <div><h2 class="cat-title">品牌 VIS</h2><p class="cat-desc">Visual Identity Systems</p></div>
+        </div>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-2', -1)">←</button>
+            <div class="work-grid" id="grid-2">
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b1/800/450"></div><h4>新能源汽车标识设计</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b2/800/450"></div><h4>定制字体设计案例</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b3/800/450"></div><h4>餐饮连锁规范手册</h4></a>
+            </div>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-2', 1)">→</button>
+        </div>
+    </section>
+
+    <section class="category-block">
+        <div class="category-header">
+            <div><h2 class="cat-title">印刷物料设计</h2><p class="cat-desc">Print & Layout</p></div>
+        </div>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-3', -1)">←</button>
+            <div class="work-grid" id="grid-3">
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c1/800/450"></div><h4>年度艺术季展览画册</h4></a>
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c2/800/450"></div><h4>地产项目高端营销折页</h4></a>
+            </div>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-3', 1)">→</button>
         </div>
     </section>
 
@@ -167,8 +160,6 @@
             <div class="work-grid" id="grid-4">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d1/800/450"></div><h4>占位项目 D-1</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d2/800/450"></div><h4>占位项目 D-2</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d3/800/450"></div><h4>占位项目 D-3</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d4/800/450"></div><h4>占位项目 D-4</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-4', 1)">→</button>
         </div>
@@ -183,8 +174,6 @@
             <div class="work-grid" id="grid-5">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e1/800/450"></div><h4>占位项目 E-1</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e2/800/450"></div><h4>占位项目 E-2</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e3/800/450"></div><h4>占位项目 E-3</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e4/800/450"></div><h4>占位项目 E-4</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-5', 1)">→</button>
         </div>
@@ -199,30 +188,5 @@
             <div class="work-grid" id="grid-6">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>占位项目 F-1</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f2/800/450"></div><h4>占位项目 F-2</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f3/800/450"></div><h4>占位项目 F-3</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f4/800/450"></div><h4>占位项目 F-4</h4></a>
             </div>
-            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6', 1)">→</button>
-        </div>
-    </section>
-
-</div>
-
-<footer id="contact" class="footer-dark">
-    <div class="footer-inner">
-        <h2 class="footer-slogan">期待与您共同创造</h2>
-        <p>Email: designer@portfolio.com</p>
-    </div>
-</footer>
-
-<script>
-    // 统一滚动函数
-    function scrollGrid(gridId, direction) {
-        const grid = document.getElementById(gridId);
-        const scrollAmount = 450; // 滚动距离略大于卡片宽，包含间距
-        grid.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-    }
-</script>
-
-</body>
-</html>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6',
