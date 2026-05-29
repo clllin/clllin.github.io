@@ -4,14 +4,34 @@
  */
 const ALL_PROJECTS = [
     {
-        id: "charity", 
+        id: "atpc",
+        title: "农业贸易促进中心宣传册",
+        date: "2025-05",
+        category: "印刷物料设计",
+        client: "农业农村部农业贸易促进中心",
+        services: "宣传册设计, 印刷物料",
+        role: "主设计师",
+        cover: "images/atpc/农贸促手册1.jpg",
+        url: "project2.html",
+        description: `画面采用中式水墨风格，以淡雅色彩和写意笔触勾勒山水、田园等自然景观，营造宁静悠远且具文化底蕴的氛围，契合农业自然、生态理念。`,
+        details: [
+            "images/atpc/农贸促手册1.jpg",
+            "images/atpc/农贸促手册2.jpg",
+            "images/atpc/农贸促手册3.jpg",
+            "images/atpc/农贸促手册4.jpg",
+            "images/atpc/农贸促手册5.jpg",
+            "images/atpc/农贸促手册6.jpg"
+        ]
+    },
+    {
+        id: "charity",
         title: "公善循互助-品牌设计方案",
         date: "2026-03",
         category: "品牌全案 / 视觉识别",
         client: "公善循互助公益方",
         services: "品牌定位, Logo设计, VI系统",
         role: "主设计师",
-        cover: "images/charity/公善循互助1.jpg", 
+        cover: "images/charity/公善循互助1.jpg",
         url: "project2.html",
         description: `整体意象：公益为核・循环为脉・科技赋能。以字母“G”作为核心视觉锚点，既提取 “公善循互助” 首字拼音“GONG”的首字母，又直接指向“公益（Gongyi）”的核心属性。中英文 + 拼音的组合，实现 “公益受众 + 年轻消费群体 + 合作商家” 的全受众覆盖。`,
         details: [
@@ -22,7 +42,7 @@ const ALL_PROJECTS = [
             'images/charity/公善循互助3.jpg',
             'images/charity/公善循互助4.jpg'
         ]
-    }, 
+    },
     {
         id: "camping",
         title: "内蒙古露营小镇——奇幻星球项目策划品牌设计方案",
