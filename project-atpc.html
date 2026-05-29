@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 - DESIGNER ALPHA</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        /* 详情页专属样式 */
+        body { font-family: "PingFang SC", sans-serif; line-height: 1.6; color: #333; margin: 0; }
+        .nav-back { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: #fff; z-index: 100; border-bottom: 1px solid #eee; }
+        .nav-back a { text-decoration: none; color: #000; font-weight: bold; font-size: 14px; }
+        
+        .project-container { max-width: 1100px; margin: 60px auto; padding: 0 5%; }
+        .hero-info { margin-bottom: 60px; }
+        .tag { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 10px; display: block; }
+        h1 { font-size: 36px; margin-bottom: 20px; font-weight: 600; }
+        .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee; }
+        .meta-item label { display: block; font-size: 12px; color: #999; margin-bottom: 5px; }
+        .meta-item span { font-size: 15px; font-weight: 500; }
+
+        .description { font-size: 17px; color: #555; max-width: 800px; margin-bottom: 80px; }
+        
+        /* 图片展示区 */
+        .detail-images img { width: 100%; margin-bottom: 40px; border-radius: 4px; display: block; }
+        
+        footer { padding: 80px 5%; background: #111; color: #fff; text-align: center; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<nav class="nav-back">
+    <a href="works.html">← BACK TO WORKS</a>
+    <span style="font-weight: 900; letter-spacing: 1px;">DESIGNER ALPHA</span>
+</nav>
+
+<div class="project-container" id="project-content">
+    </div>
+
+<footer><p>© 2024 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p></footer>
+
+<script src="projects.js"></script>
+<script>
+    // 1. 获取当前项目的数据（这里指定为 camping）
+    const projectData = ALL_PROJECTS.find(p => p.id === "charity");
+
+    if (projectData) {
+        const container = document.getElementById('project-content');
+        
+        // 2. 渲染文字内容
+        container.innerHTML = `
+            <div class="hero-info">
+                <span class="tag">${projectData.category}</span>
+                <h1>${projectData.title}</h1>
+                <div class="description">${projectData.description}</div>
+                <div class="meta-grid">
+                    <div class="meta-item"><label>DATE</label><span>${projectData.date}</span></div>
+                    <div class="meta-item"><label>CLIENT</label><span>${projectData.client}</span></div>
+                    <div class="meta-item"><label>SERVICES</label><span>${projectData.services}</span></div>
+                    <div class="meta-item"><label>ROLE</label><span>${projectData.role}</span></div>
+                </div>
+            </div>
+            <div class="detail-images">
+                ${projectData.details.map(img => `<img src="${img}" alt="Detail Image">`).join('')}
+            </div>
+        `;
+    }
+</script>
+
+</body>
+</html>
