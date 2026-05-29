@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>项目展示 - DESIGNER ALPHA</title>
     <style>
-        /* 1. 基础全局样式 */
+        /* 基础全局样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             font-family: "PingFang SC", "Microsoft YaHei", sans-serif; 
             background-color: #fff; color: #333; line-height: 1.6; overflow-x: hidden; 
         }
 
-        /* 2. 导航栏 */
+        /* 导航栏 */
         .nav-bar { 
             display: flex; justify-content: space-between; align-items: center; 
             padding: 20px 5%; position: sticky; top: 0; 
@@ -24,7 +24,7 @@
         .nav-links a { text-decoration: none; color: #666; font-size: 14px; transition: 0.3s; }
         .nav-links a.active { color: #000; font-weight: bold; }
 
-        /* 3. 布局样式 */
+        /* 布局样式 */
         .main-content { padding: 60px 5%; max-width: 1600px; margin: 0 auto; }
         .category-block { margin-bottom: 100px; }
         .category-header { 
@@ -34,34 +34,26 @@
         .cat-title { font-size: 26px; font-weight: 600; margin-bottom: 5px; color: #000; }
         .cat-desc { font-size: 12px; color: #999; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* 4. 横向滚动系统 */
+        /* 横向滚动系统 */
         .scroll-wrapper { position: relative; display: flex; align-items: center; }
         .work-grid { 
-            display: flex; 
-            gap: 25px; 
-            overflow-x: auto; 
-            scroll-behavior: smooth; 
-            padding: 10px 0 30px 0; 
-            scrollbar-width: none; 
+            display: flex; gap: 25px; overflow-x: auto; scroll-behavior: smooth; 
+            padding: 10px 0 30px 0; scrollbar-width: none; 
         }
         .work-grid::-webkit-scrollbar { display: none; }
         
-        .work-card { 
-            flex: 0 0 420px; 
-            text-decoration: none; color: inherit; transition: 0.4s; 
-        }
+        .work-card { flex: 0 0 420px; text-decoration: none; color: inherit; transition: 0.4s; }
         .work-card:hover { transform: translateY(-8px); }
         
         .img-16-9 { 
             width: 100%; aspect-ratio: 16/9; background: #f7f7f7; 
-            overflow: hidden; margin-bottom: 15px; 
-            border-radius: 12px; 
+            overflow: hidden; margin-bottom: 15px; border-radius: 12px; 
         }
         .img-16-9 img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .work-card:hover img { transform: scale(1.05); }
         .work-card h4 { font-size: 17px; font-weight: 500; letter-spacing: 0.5px; }
 
-        /* 5. 滚动按钮 */
+        /* 滚动按钮 */
         .scroll-btn { 
             position: absolute; width: 44px; height: 44px; border-radius: 50%; border: none;
             background: #000; color: white; cursor: pointer; z-index: 10;
@@ -102,7 +94,7 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-1', -1)">←</button>
             <div class="work-grid" id="grid-1">
                 <a href="coffee.html" class="work-card">
-                    <div class="img-16-9"><img src="images/camping/封面.jpg" alt="内蒙古露营小镇项目策划"></div>
+                    <div class="img-16-9"><img src="images/camping/封面.jpg" alt="内蒙古露营小镇"></div>
                     <h4>内蒙古露营小镇项目策划</h4>
                 </a>
                 <a href="project2.html" class="work-card">
@@ -136,7 +128,7 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-3', -1)">←</button>
             <div class="work-grid" id="grid-3">
                 <a href="project-atpc.html" class="work-card">
-                    <div class="img-16-9"><img src="images/atpc/农贸促手册1.jpg" alt="农业贸易促进中心宣传册"></div>
+                    <div class="img-16-9"><img src="images/atpc/农贸促手册1.jpg" alt="农业贸易促进中心"></div>
                     <h4>农业贸易促进中心宣传册</h4>
                 </a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c1/800/450"></div><h4>年度艺术季展览画册</h4></a>
@@ -171,6 +163,19 @@
         </div>
     </section>
 
+    <section class="category-block">
+        <div class="category-header">
+            <div><h2 class="cat-title">交互体验</h2><p class="cat-desc">UI / UX Design</p></div>
+        </div>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-6', -1)">←</button>
+            <div class="work-grid" id="grid-6">
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>占位项目 F-1</h4></a>
+            </div>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6', 1)">→</button>
+        </div>
+    </section>
+
 </div>
 
 <footer class="footer-dark">
@@ -178,14 +183,10 @@
 </footer>
 
 <script>
-    // 滚动功能函数
     function scrollGrid(gridId, direction) {
         const grid = document.getElementById(gridId);
-        const scrollAmount = 445; // 卡片宽度 + gap
-        grid.scrollBy({
-            left: direction * scrollAmount,
-            behavior: 'smooth'
-        });
+        const scrollAmount = 445; 
+        grid.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
 </script>
 
