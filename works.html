@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>项目展示 - DESIGNER ALPHA</title>
-    <meta name="robots" content="noindex, nofollow">
     <style>
         /* 1. 基础全局样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -74,7 +73,7 @@
         .btn-prev { left: -22px; }
         .btn-next { right: -22px; }
 
-        .footer-dark { background-color: #111; color: #fff; padding: 100px 5% 50px; margin-top: 100px; }
+        .footer-dark { background-color: #111; color: #fff; padding: 100px 5% 50px; margin-top: 100px; text-align: center; }
 
         @media (max-width: 768px) {
             .work-card { flex: 0 0 300px; }
@@ -103,20 +102,12 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-1', -1)">←</button>
             <div class="work-grid" id="grid-1">
                 <a href="coffee.html" class="work-card">
-                    <div class="img-16-9"><img src="images/camping/封面.jpg" ...> alt="内蒙古露营小镇项目策划"></div>
+                    <div class="img-16-9"><img src="images/camping/封面.jpg" alt="内蒙古露营小镇项目策划"></div>
                     <h4>内蒙古露营小镇项目策划</h4>
                 </a>
                 <a href="project2.html" class="work-card">
                     <div class="img-16-9"><img src="images/charity/公善循互助1.jpg" alt="公善循互助"></div>
                     <h4>公善循互助-品牌设计方案</h4>
-                </a>
-                <a href="project3.html" class="work-card">
-                    <div class="img-16-9"><img src="详情2.jpg" alt="买手店品牌孵化"></div>
-                    <h4>买手店品牌孵化案例</h4>
-                </a>
-                <a href="project4.html" class="work-card">
-                    <div class="img-16-9"><img src="详情3.jpg" alt="高端月子中心重构"></div>
-                    <h4>高端月子中心品牌重构</h4>
                 </a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-1', 1)">→</button>
@@ -132,7 +123,6 @@
             <div class="work-grid" id="grid-2">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b1/800/450"></div><h4>新能源汽车标识设计</h4></a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b2/800/450"></div><h4>定制字体设计案例</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/b3/800/450"></div><h4>餐饮连锁规范手册</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-2', 1)">→</button>
         </div>
@@ -145,8 +135,11 @@
         <div class="scroll-wrapper">
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-3', -1)">←</button>
             <div class="work-grid" id="grid-3">
+                <a href="project-atpc.html" class="work-card">
+                    <div class="img-16-9"><img src="images/atpc/农贸促手册1.jpg" alt="农业贸易促进中心宣传册"></div>
+                    <h4>农业贸易促进中心宣传册</h4>
+                </a>
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c1/800/450"></div><h4>年度艺术季展览画册</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/c2/800/450"></div><h4>地产项目高端营销折页</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-3', 1)">→</button>
         </div>
@@ -160,7 +153,6 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-4', -1)">←</button>
             <div class="work-grid" id="grid-4">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d1/800/450"></div><h4>占位项目 D-1</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/d2/800/450"></div><h4>占位项目 D-2</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-4', 1)">→</button>
         </div>
@@ -174,20 +166,28 @@
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-5', -1)">←</button>
             <div class="work-grid" id="grid-5">
                 <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e1/800/450"></div><h4>占位项目 E-1</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e2/800/450"></div><h4>占位项目 E-2</h4></a>
             </div>
             <button class="scroll-btn btn-next" onclick="scrollGrid('grid-5', 1)">→</button>
         </div>
     </section>
 
-    <section class="category-block">
-        <div class="category-header">
-            <div><h2 class="cat-title">交互体验</h2><p class="cat-desc">UI / UX Design</p></div>
-        </div>
-        <div class="scroll-wrapper">
-            <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-6', -1)">←</button>
-            <div class="work-grid" id="grid-6">
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>占位项目 F-1</h4></a>
-                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f2/800/450"></div><h4>占位项目 F-2</h4></a>
-            </div>
-            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6',
+</div>
+
+<footer class="footer-dark">
+    <p>© 2024 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<script>
+    // 滚动功能函数
+    function scrollGrid(gridId, direction) {
+        const grid = document.getElementById(gridId);
+        const scrollAmount = 445; // 卡片宽度 + gap
+        grid.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
