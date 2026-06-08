@@ -62,8 +62,7 @@ const ALL_PROJECTS = [
             'images/camping/详情5.jpg',
             'images/camping/详情6.jpg'
         ]
-    }
-];
+},
 {
         id: "elementsclub",
         title: "Elements Club 品牌视觉系统设计",
