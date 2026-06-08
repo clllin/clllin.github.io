@@ -64,3 +64,28 @@ const ALL_PROJECTS = [
         ]
     }
 ];
+{
+        id: "elementsclub",
+        title: "Elements Club 品牌视觉系统设计",
+        date: "2026-05",
+        category: "品牌 VIS / Visual Identity",
+        client: "Elements Club 创始团队",
+        services: "VIS 系统设计, 品牌标准色, 社交媒体规范",
+        role: "主设计师",
+        cover: "images/elementsclub/elementsclub封面.jpg",
+        url: "project-elements.html",
+        description: `Elements Club 以“自然元素与现代律动”为核心哲学。VIS 系统设计围绕着风、土、火、水四大元素进行抽象化重构。我们建立了一套高对比度的色彩管理系统，以极致的黑（Obsidian Black）作为基调，搭配象征各元素的荧光辅助色。整套视觉系统旨在传达出一种克制却富有爆发力的现代俱乐部氛围。`,
+        details: [
+            "images/elementsclub/elementsclub1.jpg",
+            "images/elementsclub/elementsclub2.jpg",
+            "images/elementsclub/elementsclub3.jpg",
+            "images/elementsclub/elementsclub4jpg.jpg",
+            "images/elementsclub/elementsclub5jpg.jpg",
+            "images/elementsclub/elementsclub6.jpg",
+            "images/elementsclub/elementsclub7.jpg",
+            "images/elementsclub/elementsclub8.jpg",
+            "images/elementsclub/elementsclub9.jpg",
+            "images/elementsclub/elementsclub10.jpg",
+            "images/elementsclub/elementsclub11.png"
+        ]
+    },
