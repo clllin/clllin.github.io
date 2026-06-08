@@ -46,11 +46,13 @@
 
 <script src="projects.js"></script>
 <script>
-    // 关键：让页面去 projects.js 里精准匹配叫 elementsclub 的项目数据
+    // 1. 精准匹配 projects.js 里的 elementsclub 项目数据
     const projectData = ALL_PROJECTS.find(p => p.id === "elementsclub");
     
     if (projectData) {
         const container = document.getElementById('project-content');
+        
+        // 2. 先把文字、标签和基本结构塞进去（这里没有任何反斜杠，不会出错）
         container.innerHTML = `
             <div class="hero-info">
                 <span class="tag">${projectData.category}</span>
@@ -63,14 +65,24 @@
                     <div class="meta-item"><label>ROLE</label><span>${projectData.role}</span></div>
                 </div>
             </div>
-            <div class="detail-images">
-                \${projectData.details.map(img => `<img src="\${img}" alt="VIS Detail">`).join('')}
-            </div>
+            <div class="detail-images" id="image-gallery">
+                </div>
         `;
+        
+        // 3. 单独通过循环把图片一张张挂载进去，安全又稳定
+        const gallery = document.getElementById('image-gallery');
+        if (projectData.details && projectData.details.length > 0) {
+            projectData.details.forEach(function(imgUrl) {
+                const imgElement = document.createElement('img');
+                imgElement.src = imgUrl;
+                imgElement.alt = "VIS Detail";
+                gallery.appendChild(imgElement);
+            });
+        }
+
     } else {
         document.getElementById('project-content').innerHTML = "<p style='padding: 50px 0; text-align:center; color:#999;'>项目内容加载中或未找到，请检查路径...</p>";
     }
 </script>
-
 </body>
 </html>
