@@ -73,7 +73,7 @@ const ALL_PROJECTS = [
         role: "主设计师",
         cover: "images/elementsclub/elementsclub封面.jpg",
         url: "project-elements.html",
-        description: `Elements Club 以“自然元素与现代律动”为核心哲学。VIS 系统设计围绕着风、土、火、水四大元素进行抽象化重构。我们建立了一套高对比度的色彩管理系统，以极致的黑（Obsidian Black）作为基调，搭配象征各元素的荧光辅助色。整套视觉系统旨在传达出一种克制却富有爆发力的现代俱乐部氛围。`,
+        description: `Elements Club ELEMENTS 的 LOGO 以首字母 “E” 为原型重构，采用递进式几何线条，兼具 3D 延伸感与阶梯式上升的美好寓意，既呼应电音场景的律动感，又传递品牌突破传统、拥抱年轻潮流的先锋态度`,
         details: [
             "images/elementsclub/elementsclub1.jpg",
             "images/elementsclub/elementsclub2.jpg",
