@@ -89,3 +89,4 @@ const ALL_PROJECTS = [
             "images/elementsclub/elementsclub11.png"
         ]
     },
+]; //
