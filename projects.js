@@ -45,6 +45,25 @@ const ALL_PROJECTS = [
         ]
     },
     {
+        id: "rudolf",
+        title: "鲁道夫项目设计",
+        date: "2026-06",
+        category: "印刷物料设计 / Print & Layout",
+        client: "鲁道夫品牌方",
+        services: "画册排版, 物料视觉设计, 印刷工艺规划",
+        role: "主设计师",
+        cover: "images/rudolf/鲁道夫封面.jpg",
+        url: "project-rudolf.html",
+        description: `“鲁道夫”印刷物料设计围绕品牌的核心视觉资产展开，通过严谨的现代版式律动与大面积留白，赋予画面高级、洗练的视觉质感。在信息层级上进行了精细化的梳理，确保商业核心内容的逻辑性传达，同时结合富有层次的网格规范，使整体画册兼具极高的审美价值与阅读体验。`,
+        details: [
+            "images/rudolf/鲁道夫封面.jpg", // 详情页第一张放封面大图
+            "images/rudolf/鲁道夫1.jpg",
+            "images/rudolf/鲁道夫2.jpg",
+            "images/rudolf/鲁道夫3.jpg",
+            "images/rudolf/鲁道夫4.jpg"
+        ]
+    },
+    {
         id: "charity",
         title: "公善循互助-品牌设计方案",
         date: "2026-03",
