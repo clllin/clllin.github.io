@@ -6,7 +6,7 @@ const ALL_PROJECTS = [
 {
         id: "kaigang",
         title: "开杠招商手册设计",
-        date: "2026-06",
+        date: "2021-04",
         category: "印刷物料设计 / Print & Layout",
         client: "开杠品牌方",
         services: "招商手册设计, 视觉排版, 画册装帧",
