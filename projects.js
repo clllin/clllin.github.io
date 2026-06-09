@@ -15,7 +15,7 @@ const ALL_PROJECTS = [
         url: "project-kaigang.html",
         description: `“开杠招商手册”设计本手册设计以极具张力的“国潮绿”与“中国红”为主基调，将传统麻将文化与现代潮流插画趣味融合，打造兼具文化底蕴与前卫网格系统的视觉排版。整体设计通过大块面的色彩碰撞与精致的图表系统，在张扬品牌年轻活力的同时，清晰传递了餐饮品牌的商业模式与加盟优势。`,
         details: [
-            "images/kaigang/开杠封面.jpg"
+            "images/kaigang/开杠封面.jpg",
             "images/kaigang/开杠1.jpg",
             "images/kaigang/开杠2.jpg",
             "images/kaigang/开杠3.jpg",
