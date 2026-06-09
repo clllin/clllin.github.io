@@ -102,61 +102,8 @@ const ALL_PROJECTS = [
             'images/camping/详情5.jpg',
             'images/camping/详情6.jpg'
         ]
-    }, // 👈 这里帮你把漏掉的闭合大括号补齐了
-    {
-        id: "elementsclub",
-        title: "Elements Club 品牌视觉系统设计",
-        date: "2026-05",
-        category: "品牌 VIS / Visual Identity",
-        client: "Elements Club 创始团队",
-        services: "VIS 系统设计, 品牌标准色, 社交媒体规范",
-        role: "主设计师",
-        cover: "images/elementsclub/elementsclub封面.jpg",
-        url: "project-elements.html",
-        description: `Elements Club ELEMENTS 的 LOGO 以首字母 “E” 为原型重构，采用递进式几何线条，兼具 3D 延伸感与阶梯式上升的美好寓意，既呼应电音场景的律动感，又传递品牌突破传统、拥抱年轻潮流的先锋态度`,
-        details: [
-            "images/elementsclub/elementsclub1.jpg",
-            "images/elementsclub/elementsclub2.jpg",
-            "images/elementsclub/elementsclub3.jpg",
-            "images/elementsclub/elementsclub4jpg.jpg",
-            "images/elementsclub/elementsclub5jpg.jpg",
-            "images/elementsclub/elementsclub6.jpg",
-            "images/elementsclub/elementsclub7.jpg",
-            "images/elementsclub/elementsclub8.jpg",
-            "images/elementsclub/elementsclub9.jpg",
-            "images/elementsclub/elementsclub10.jpg",
-            "images/elementsclub/elementsclub11.png" // 👈 这里去掉了尾部多余的逗号，保证数组能完美封口
-        ]
-    }
-];            'images/charity/公善循互助logo特写.jpg',
-            'images/charity/公善循互助logo标准化制图.jpg',
-            'images/charity/公善循互助1.jpg',
-            'images/charity/公善循互助2.jpg',
-            'images/charity/公善循互助3.jpg',
-            'images/charity/公善循互助4.jpg'
-        ]
     },
     {
-        id: "camping",
-        title: "内蒙古露营小镇——奇幻星球项目策划品牌设计方案",
-        date: "2024-05",
-        category: "品牌全案 / 视觉识别",
-        client: "露营小镇项目组",
-        services: "品牌定位, Logo设计, VI系统",
-        role: "主设计师",
-        cover: "images/camping/封面.jpg",
-        url: "coffee.html",
-        description: `本 logo 是为“奇幻星球”打造的专属视觉标识，以 “卡通童趣 + 科幻星球” 为核心风格。拟人化黄色五角星既强化科幻辨识度，又传递乐园轻松欢乐的氛围，成为品牌高记忆点的标志性符号。`,
-        details: [
-            'images/camping/详情1.jpg',
-            'images/camping/详情2.jpg',
-            'images/camping/详情3.jpg',
-            'images/camping/详情4.jpg',
-            'images/camping/详情5.jpg',
-            'images/camping/详情6.jpg'
-        ]
-},
-{
         id: "elementsclub",
         title: "Elements Club 品牌视觉系统设计",
         date: "2026-05",
@@ -180,5 +127,5 @@ const ALL_PROJECTS = [
             "images/elementsclub/elementsclub10.jpg",
             "images/elementsclub/elementsclub11.png"
         ]
-    },
-]; //
+    }
+];
