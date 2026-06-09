@@ -3,6 +3,26 @@
  * 提示：新项目请写在数组的最前面，这样首页会自动显示最新作品
  */
 const ALL_PROJECTS = [
+{
+        id: "kaigang",
+        title: "开杠招商手册设计",
+        date: "2026-06",
+        category: "印刷物料设计 / Print & Layout",
+        client: "开杠品牌方",
+        services: "招商手册设计, 视觉排版, 画册装帧",
+        role: "主设计师",
+        cover: "images/kaigang/开杠封面.jpg",
+        url: "project-kaigang.html",
+        description: `“开杠招商手册”设计打破了传统画册的沉闷感，注入了具有视觉冲击力的现代潮流元素。整体排版兼顾了商业信息的清晰传达与品牌个性的强烈张扬，通过大块面的色彩碰撞与精致的网格系统，完美呈现了品牌的商业潜能与前卫格调。`,
+        details: [
+            "images/kaigang/开杠1.jpg",
+            "images/kaigang/开杠2.jpg",
+            "images/kaigang/开杠3.jpg",
+            "images/kaigang/开杠4.jpg",
+            "images/kaigang/开杠5.jpg",
+            "images/kaigang/开杠6.jpg"
+        ]
+    },
     {
         id: "atpc",
         title: "农业贸易促进中心宣传册",
