@@ -47,7 +47,7 @@ const ALL_PROJECTS = [
     {
         id: "rudolf",
         title: "鲁道夫项目设计",
-        date: "2026-06",
+        date: "2020-06",
         category: "印刷物料设计 / Print & Layout",
         client: "鲁道夫品牌方",
         services: "画册排版, 物料视觉设计, 印刷工艺规划",
