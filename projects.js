@@ -25,6 +25,27 @@ const ALL_PROJECTS = [
         ]
     },
     {
+        id: "mixiaoquan",
+        title: "米小圈产品手册",
+        date: "2022-03",
+        category: "印刷物料设计 / Print & Layout",
+        client: "米小圈品牌方",
+        services: "手册设计, 产品插画, 画册装订",
+        role: "主设计师",
+        cover: "images/mixiaoquan/mixiaoquan封面.jpg",
+        url: "project-mixiaoquan.html",
+        description: `《米小圈产品手册》设计延续该品牌一贯的活泼、趣味风格，通过高饱和度的色彩搭配与生动的插画排版，将产品和手册完美融合，信息趣味化呈现，打造兼具阅读乐趣与商业营销价值的高品质产品手册。`,
+        details: [
+            "images/mixiaoquan/mixiaoquan封面.jpg",
+            "images/mixiaoquan/mixiaoquan1.jpg",
+            "images/mixiaoquan/mixiaoquan2.jpg",
+            "images/mixiaoquan/mixiaoquan3.jpg",
+            "images/mixiaoquan/mixiaoquan4.jpg",
+            "images/mixiaoquan/mixiaoquan5.jpg",
+            "images/mixiaoquan/mixiaoquan6.jpg"
+        ]
+    },
+    {
         id: "atpc",
         title: "农业贸易促进中心宣传册",
         date: "2025-05",
@@ -33,7 +54,7 @@ const ALL_PROJECTS = [
         services: "宣传册设计, 印刷物料",
         role: "主设计师",
         cover: "images/atpc/农贸促手册1.jpg",
-        url: "project2.html",
+        url: "project-atpc.html",
         description: `画面采用中式水墨风格，以淡雅色彩和写意笔触勾勒山山、田园等自然景观，营造宁静悠远且具文化底蕴的氛围，契合农业自然、生态理念。`,
         details: [
             "images/atpc/农贸促手册1.jpg",
