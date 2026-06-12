@@ -4,6 +4,29 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "tebiandiangong",
+        title: "特变电工天津武清展区设计",
+        date: "2025-04",
+        category: "展览展示",
+        client: "特变电工",
+        services: "展厅设计, 空间布局, 平面视觉",
+        role: "展厅布局及平面设计师",
+        cover: "images/tebiandiangong/tebiandiangong封面.jpg",
+        url: "project-tbea.html",
+        description: `本项目为特变电工天津武清展厅，选址地地下室原停车楼改造而成。设计以科技蓝为主调，融合工业质感与未来语言，通过沉浸式大屏、动态模型与数字互动，串联企业发展历程、核心技术与全球布局，打造兼具品牌叙事力与未来感的展示空间。`,
+        details: [
+            "images/tebiandiangong/tebiandiangong1.png",
+            "images/tebiandiangong/tebiandiangong2.png",
+            "images/tebiandiangong/tebiandiangong3.png",
+            "images/tebiandiangong/tebiandiangong4.jpg",
+            "images/tebiandiangong/tebiandiangong5.jpg",
+            "images/tebiandiangong/tebiandiangong6.jpg",
+            "images/tebiandiangong/tebiandiangong7.jpg",
+            "images/tebiandiangong/tebiandiangong8.jpg",
+            "images/tebiandiangong/tebiandiangong9.jpg"
+        ]
+    },
+    {
         id: "tsinghua",
         title: "清华电子系文创产品",
         date: "2024-10",
