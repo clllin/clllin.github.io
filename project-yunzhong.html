@@ -3,124 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>云中盛乐 - DESIGNER ALPHA</title>
+    <title>云中盛乐 - 项目详情</title>
     <meta name="robots" content="noindex, nofollow">
     <style>
-        /* 基础全局样式 */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: "PingFang SC", "Microsoft YaHei", sans-serif; 
-            background-color: #fff; color: #111; line-height: 1.6; 
-        }
-
-        /* 导航栏 */
-        .nav-bar { 
-            display: flex; justify-content: space-between; align-items: center; 
-            padding: 20px 5%; background: #fff; border-bottom: 1px solid #eee;
-            position: sticky; top: 0; z-index: 1000;
-        }
-        .logo { font-weight: 900; letter-spacing: 2px; font-size: 1.2rem; color: #000; text-decoration: none; }
-        .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { text-decoration: none; color: #666; font-size: 14px; transition: 0.3s; }
-        .nav-links a:hover { color: #000; }
-
-        /* 详情页分栏布局 */
-        .detail-container { display: flex; min-height: calc(100vh - 80px); }
-
-        /* 左侧固定的信息看板 */
-        .info-panel { 
-            width: 35%; padding: 80px 5% 50px; 
-            position: fixed; top: 80px; left: 0; bottom: 0;
-            overflow-y: auto; display: flex; flex-direction: column; justify-content: space-between;
-        }
-        .project-title { font-size: 32px; font-weight: 600; margin-bottom: 30px; line-height: 1.3; color: #000; }
-        
-        .meta-group { margin-bottom: 40px; }
-        .meta-item { margin-bottom: 20px; font-size: 14px; }
-        .meta-label { font-weight: bold; color: #999; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; margin-bottom: 4px; }
-        .meta-value { color: #333; font-size: 15px; }
-
-        .project-desc { font-size: 15px; color: #555; text-align: justify; border-top: 1px solid #eee; padding-top: 30px; }
-
-        /* 右侧滚动的全宽大图区 */
-        .image-panel { width: 65%; margin-left: 35%; padding: 40px 4% 80px 0; }
-        .image-panel img { width: 100%; height: auto; display: block; margin-bottom: 30px; border-radius: 8px; }
-
-        /* 底部版权 */
-        .footer-dark { background-color: #111; color: #fff; padding: 60px 5%; text-align: center; font-size: 14px; }
-
-        /* 移动端响应式适配 */
-        @media (max-width: 1024px) {
-            .detail-container { flex-direction: column; }
-            .info-panel { width: 100%; position: relative; top: 0; padding: 40px 5%; }
-            .image-panel { width: 100%; margin-left: 0; padding: 20px 5% 60px; }
-        }
+        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
+        .nav-back { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .nav-back a { text-decoration: none; color: #666; font-size: 14px; letter-spacing: 0.5px; transition: 0.3s; }
+        .nav-back a:hover { color: #000; }
+        .project-container { max-width: 1000px; margin: 0 auto; padding: 0 5% 100px; }
+        .hero-info { margin-top: 40px; margin-bottom: 60px; }
+        .tag { display: inline-block; background: #000; padding: 4px 12px; border-radius: 20px; font-size: 11px; color: #fff; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { font-size: 32px; margin-bottom: 20px; color: #000; font-weight: 600; }
+        .description { font-size: 16px; color: #555; max-width: 800px; margin-bottom: 50px; white-space: pre-wrap; text-align: justify; }
+        .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; border-top: 1px solid #eee; padding-top: 30px; }
+        .meta-item label { display: block; font-size: 11px; color: #999; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+        .meta-item span { font-size: 14px; font-weight: 500; color: #222; }
+        .detail-images { margin-top: 80px; }
+        .detail-images img { width: 100%; margin-bottom: 40px; border-radius: 12px; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.04); }
+        footer { padding: 80px 5%; background: #111; color: #fff; text-align: center; font-size: 13px; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
-<nav class="nav-bar">
-    <a href="index.html" class="logo">DESIGNER ALPHA</a>
-    <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="works.html">项目展示</a></li>
-        <li><a href="#contact">联系方式</a></li>
-    </ul>
+<nav class="nav-back">
+    <a href="works.html">← BACK TO WORKS</a>
+    <span style="font-weight: 900; letter-spacing: 1px;">DESIGNER ALPHA</span>
 </nav>
 
-<div class="detail-container">
+<div class="project-container" id="project-content">
+    </div>
+
+<footer><p>© 2026 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p></footer>
+
+<script src="projects.js"></script>
+<script>
+    // 1. 精准抓取 projects.js 数组里的云中盛乐数据
+    const projectData = ALL_PROJECTS.find(p => p.id === "yunzhongshengle");
     
-    <div class="info-panel">
-        <div>
-            <h1 class="project-title">云中盛乐<br>品牌全案视觉系统设计</h1>
-            
-            <div class="meta-group">
-                <div class="meta-item">
-                    <div class="meta-label">Year / 年份</div>
-                    <div class="meta-value">2025年5月</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">Client / 客户</div>
-                    <div class="meta-value">内蒙古文旅局</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">Services / 服务</div>
-                    <div class="meta-value">品牌策略, 品牌全案, 视觉系统设计</div>
-                </div>
-                <div class="meta-item">
-                    <div class="meta-label">Role / 角色</div>
-                    <div class="meta-value">主案设计</div>
+    if (projectData) {
+        const container = document.getElementById('project-content');
+        
+        // 2. 动态注入云中盛乐的文本与矩阵信息
+        container.innerHTML = `
+            <div class="hero-info">
+                <span class="tag">${projectData.category}</span>
+                <h1>${projectData.title}</h1>
+                <div class="description">${projectData.description}</div>
+                <div class="meta-grid">
+                    <div class="meta-item"><label>DATE</label><span>${projectData.date}</span></div>
+                    <div class="meta-item"><label>CLIENT</label><span>${projectData.client}</span></div>
+                    <div class="meta-item"><label>SERVICES</label><span>${projectData.services}</span></div>
+                    <div class="meta-item"><label>ROLE</label><span>${projectData.role}</span></div>
                 </div>
             </div>
-        </div>
-
-        <p class="project-desc">
-            “云中盛乐”项目紧扣文化强国与文旅融合战略，以“历史文化 + 艺术创意 + 休闲度假”为核心模式，活化盛乐古邑文化遗产，植入演艺、沉浸体验、文创研发等业态，打造文旅融合创新标杆。LOGO以七彩渐变云为轮廓，融入百灵鸟意象，呼应内蒙古草原的灵动与盛乐文化底蕴。七种色彩既承载地域基因，也对应度假区七大游玩体系，串联游牧文化与现代体验，传递自然、人文与活力的融合之美。
-        </p>
-    </div>
-
-    <div class="image-panel">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E5%B0%81%E9%9D%A2.jpg" alt="云中盛乐 封面图">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%20logo%E6%A8%AA.jpg" alt="云中盛乐 标志设计横版">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%20logo%E7%AB%96.jpg" alt="云中盛乐 标志设计竖版">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E6%A0%87%E5%87%86%E5%88%B6%E5%9B%BE.jpg" alt="云中盛乐 标志标准化制图">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%201.jpg" alt="云中盛乐 视觉延展 1">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%202.jpg" alt="云中盛乐 视觉延展 2">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%203.jpg" alt="云中盛乐 视觉延展 3">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%204.jpg" alt="云中盛乐 视觉延展 4">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%205.jpg" alt="云中盛乐 视觉延展 5">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%206.jpg" alt="云中盛乐 视觉延展 6">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%207.jpg" alt="云中盛乐 视觉延展 7">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%208.jpg" alt="云中盛乐 视觉延展 8">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%209.jpg" alt="云中盛乐 视觉延展 9">
-        <img src="images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%2010.jpg" alt="云中盛乐 视觉延展 10">
-    </div>
-
-</div>
-
-<footer class="footer-dark">
-    <p>© 2026 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p>
-</footer>
+            <div class="detail-images" id="image-gallery"></div>
+        `;
+        
+        // 3. 用常规安全循环把云中盛乐的14张长图完美渲染到网页上
+        const gallery = document.getElementById('image-gallery');
+        if (projectData.details && projectData.details.length > 0) {
+            projectData.details.forEach(function(imgUrl) {
+                const imgElement = document.createElement('img');
+                imgElement.src = imgUrl;
+                imgElement.alt = "Detail Image";
+                gallery.appendChild(imgElement);
+            });
+        }
+    } else {
+        document.getElementById('project-content').innerHTML = "<p style='padding: 50px 0; text-align:center; color:#999;'>未找到该项目数据，请检查 projects.js</p>";
+    }
+</script>
 
 </body>
 </html>
