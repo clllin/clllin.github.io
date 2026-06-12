@@ -4,6 +4,23 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "guihuaju",
+        title: "规划居定制酒 - 品牌文创体系设计",
+        date: "2026-06",
+        // 🌟 已精准校正为你的纯中文板块名称：品牌文创体系
+        category: "品牌文创体系",
+        client: "规划居",
+        services: "文创产品开发, 包装设计, 品牌视觉延展",
+        role: "主案设计",
+        cover: "images/guihuaju/guihuaju1.jpg",
+        url: "project-guihuaju.html",
+        description: `《规划居定制酒》项目深刻挖掘品牌核心价值，将传统酒文化与现代视觉符号进行创新融合。通过对瓶身、包装以及核心视觉系统的定制化设计，打造出兼具文化底蕴与品牌辨识度的文创周边，全面提升品牌的文化附加值与礼仪体验。`,
+        details: [
+            "images/guihuaju/guihuaju1.jpg",
+            "images/guihuaju/guihuaju2.jpg"
+        ]
+    },
+    {
         id: "yunzhongshengle",
         title: "云中盛乐 - 品牌全案视觉系统设计",
         date: "2025-05",
@@ -15,20 +32,20 @@ const ALL_PROJECTS = [
         url: "project-yunzhong.html",
         description: `“云中盛乐”项目紧扣文化强国与文旅融合战略，以“历史文化 + 艺术创意 + 休闲度假”为核心模式，活化盛乐古邑文化遗产，植入演艺、沉浸体验、文创研发等业态，打造文旅融合创新标杆。LOGO以七彩渐变云为轮廓，融入百灵鸟意象，呼应内蒙古草原的灵动与盛乐文化底蕴。七种色彩既承载地域基因，也对应度假区七大游玩体系，串联游牧文化与现代体验，传递自然、人文与活力的融合之美。`,
         details: [
-           "images/yunzhongshengle/云中盛乐封面.jpg",
-    "images/yunzhongshengle/云中盛乐logo横.jpg",
-    "images/yunzhongshengle/云中盛乐logo竖.jpg",
-    "images/yunzhongshengle/云中盛乐标准制图.jpg",
-    "images/yunzhongshengle/云中盛乐1.jpg",
-    "images/yunzhongshengle/云中盛乐2.jpg",
-    "images/yunzhongshengle/云中盛乐3.jpg",
-    "images/yunzhongshengle/云中盛乐4.jpg",
-    "images/yunzhongshengle/云中盛乐5.jpg",
-    "images/yunzhongshengle/云中盛乐6.jpg",
-    "images/yunzhongshengle/云中盛乐7.jpg",
-    "images/yunzhongshengle/云中盛乐8.jpg",
-    "images/yunzhongshengle/云中盛乐9.jpg",
-    "images/yunzhongshengle/云中盛乐10.jpg"
+            "images/yunzhongshengle/云中盛乐封面.jpg",
+            "images/yunzhongshengle/云中盛乐logo横.jpg",
+            "images/yunzhongshengle/云中盛乐logo竖.jpg",
+            "images/yunzhongshengle/云中盛乐标准制图.jpg",
+            "images/yunzhongshengle/云中盛乐1.jpg",
+            "images/yunzhongshengle/云中盛乐2.jpg",
+            "images/yunzhongshengle/云中盛乐3.jpg",
+            "images/yunzhongshengle/云中盛乐4.jpg",
+            "images/yunzhongshengle/云中盛乐5.jpg",
+            "images/yunzhongshengle/云中盛乐6.jpg",
+            "images/yunzhongshengle/云中盛乐7.jpg",
+            "images/yunzhongshengle/云中盛乐8.jpg",
+            "images/yunzhongshengle/云中盛乐9.jpg",
+            "images/yunzhongshengle/云中盛乐10.jpg"
         ]
     },
     {
