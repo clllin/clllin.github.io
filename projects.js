@@ -6,15 +6,15 @@ const ALL_PROJECTS = [
     {
         id: "guihuaju",
         title: "规划居定制酒 - 品牌文创体系设计",
-        date: "2026-06",
+        date: "2024-03",
         // 🌟 已精准校正为你的纯中文板块名称：品牌文创体系
         category: "品牌文创体系",
         client: "规划居",
-        services: "文创产品开发, 包装设计, 品牌视觉延展",
-        role: "主案设计",
+        services: "文创产品开发, 包装设计",
+        role: "主设计",
         cover: "images/guihuaju/guihuaju1.jpg",
         url: "project-guihuaju.html",
-        description: `《规划居定制酒》项目深刻挖掘品牌核心价值，将传统酒文化与现代视觉符号进行创新融合。通过对瓶身、包装以及核心视觉系统的定制化设计，打造出兼具文化底蕴与品牌辨识度的文创周边，全面提升品牌的文化附加值与礼仪体验。`,
+        description: `《规划居定制酒》以茅台经典瓶型为载体，延续 “规划居” 品牌主题色的清雅调性，将东方水墨意境融入包装。瓶身与礼盒以品牌主色铺陈，搭配极简书法字体与暗纹山水意象，红盖点睛，既保留酱酒的庄重质感，又赋予品牌专属的文创表达，成为承载文化底蕴的定制佳酿。`,
         details: [
             "images/guihuaju/guihuaju1.jpg",
             "images/guihuaju/guihuaju2.jpg"
