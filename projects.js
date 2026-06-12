@@ -4,6 +4,30 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "shibohui2024",
+        title: "2024中国国际食品博览会主视觉及活动系统设计",
+        date: "2024-11",
+        category: "活动视觉",
+        client: "中国国际食品博览会组委会",
+        services: "活动主视觉设计, 展会场馆导视, 延展物料规划",
+        role: "主案设计师",
+        cover: "images/shibohui/2024食博会封面.jpg",
+        url: "project-shibohui.html",
+        description: `2024 中国国际食品及配料博览会、预制菜产业博览会视觉全案设计，以 “食全食美，预见‘味’来” 为主题，覆盖主视觉、多语种VI体系、招商手册、线上长图等全链路物料，为东莞展会打造兼具地域文化与行业属性的品牌形象。主视觉以“碗舟载味+龙纹”为核心意象，融合东莞地标与食材元素，传递水乡文化与产业活力；VI系统采用活力渐变色，适配多语种应用；招商物料以清新蓝绿为主调，强化信息可读性，兼顾品牌识别与商业传播需求。`,
+        details: [
+            "images/shibohui/2024食博会1.jpg",
+            "images/shibohui/2024食博会2.jpg",
+            "images/shibohui/2024食博会3.jpg",
+            "images/shibohui/2024食博会4.jpg",
+            "images/shibohui/2024食博会5.jpg",
+            "images/shibohui/2024食博会6.jpg",
+            "images/shibohui/2024食博会7.jpg",
+            "images/shibohui/2024食博会8.jpg",
+            "images/shibohui/2024食博会9.jpg",
+            "images/shibohui/2024食博会10.jpg"
+        ]
+    },
+    {
         id: "tebiandiangong",
         title: "特变电工天津武清展区设计",
         date: "2025-04",
@@ -56,7 +80,7 @@ const ALL_PROJECTS = [
         role: "主设计",
         cover: "images/guihuaju/guihuaju1.jpg",
         url: "project-guihuaju.html",
-        description: `《规划居定制酒》以茅台经典瓶型为载体，延续 “规划居” 品牌主题色的清雅调性，将东方水墨意境融入包装。瓶身与礼盒以品牌主色铺陈，搭配极简书法字体与暗纹山水意象，红盖点睛，既保留酱酒的庄重质感，又赋予品牌专属的文创表达，成为承载文化底蕴的定制佳酿。`,
+        description: `《规划居定制酒》以茅台经典瓶型为载体，延续 “规划居” 品牌主题色的清雅调性，将东方水墨意境融入包装。瓶身与礼盒以品牌主色铺陈，搭配极极简书法字体与暗纹山水意象，红盖点睛，既保留酱酒的庄重质感，又赋予品牌专属的文创表达，成为承载文化底蕴的定制佳酿。`,
         details: [
             "images/guihuaju/guihuaju1.jpg",
             "images/guihuaju/guihuaju2.jpg"
@@ -181,7 +205,7 @@ const ALL_PROJECTS = [
         role: "主设计师",
         cover: "images/charity/公善循互助1.jpg",
         url: "project2.html",
-        description: `整体意象：公益为核・循环为脉・科技赋能。以字母“G”作为核心视觉锚点，既提取 “公善循互助” 首字拼音“GONG”的首字母，又直接指向“公益（Gongyi）”的核心属性。中英文 + 拼音的组合，实现 “公益受众 + 年轻消费群体 + 合作商家” 的全受众覆盖。`,
+        description: `整体意象：公益为核・循环为脉・科技赋能。以字母“G”作为核心视觉锚点，既提取 “公善循互助” 首字拼音“GONG”的首字母，又直接指向“公益（Gongyi）”的核心属性。中英文 + 拼音的组合，实现 “公益受众 + 年年轻消费群体 + 合作商家” 的全受众覆盖。`,
         details: [
             'images/charity/公善循互助logo特写.jpg',
             'images/charity/公善循互助logo标准化制图.jpg',
