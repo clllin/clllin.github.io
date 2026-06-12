@@ -4,6 +4,34 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "yunzhongshengle",
+        title: "云中盛乐 - 品牌全案视觉系统设计",
+        date: "2025-05",
+        category: "品牌全案 / 视觉识别",
+        client: "内蒙古文旅局",
+        services: "品牌策略, 品牌全案, 视觉系统设计",
+        role: "主案设计",
+        cover: "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E5%B0%81%E9%9D%A2.jpg",
+        url: "project-yunzhong.html",
+        description: `“云中盛乐”项目紧扣文化强国与文旅融合战略，以“历史文化 + 艺术创意 + 休闲度假”为核心模式，活化盛乐古邑文化遗产，植入演艺、沉浸体验、文创研发等业态，打造文旅融合创新标杆。LOGO以七彩渐变云为轮廓，融入百灵鸟意象，呼应内蒙古草原的灵动与盛乐文化底蕴。七种色彩既承载地域基因，也对应度假区七大游玩体系，串联游牧文化与现代体验，传递自然、人文与活力的融合之美。`,
+        details: [
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E5%B0%81%E9%9D%A2.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%20logo%E6%A8%AA.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%20logo%E7%AB%96.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E6%A0%87%E5%87%86%E5%88%B6%E5%9B%BE.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%201.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%202.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%203.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%204.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%205.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%206.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%207.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%208.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%209.jpg",
+            "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%2010.jpg"
+        ]
+    },
+    {
         id: "kaigang",
         title: "开杠招商手册设计",
         date: "2021-04",
@@ -128,7 +156,6 @@ const ALL_PROJECTS = [
         id: "elementsclub",
         title: "Elements Club 品牌视觉系统设计",
         date: "2026-05",
-        // 🌟 成功修改分类为：品牌全案 / 视觉识别
         category: "品牌全案 / 视觉识别",
         client: "Elements Club 创始团队",
         services: "VIS 系统设计, 品牌标准色, 社交媒体规范",
