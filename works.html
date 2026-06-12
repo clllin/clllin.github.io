@@ -183,4 +183,38 @@
         <div class="scroll-wrapper">
             <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-5', -1)">←</button>
             <div class="work-grid" id="grid-5">
-                <a href="#" class="work-card"><div class="img-16-9"><img src="
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/e1/800/450"></div><h4>占位项目 E-1</h4></a>
+            </div>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-5', 1)">→</button>
+        </div>
+    </section>
+
+    <section class="category-block">
+        <div class="category-header">
+            <div><h2 class="cat-title">交互体验</h2><p class="cat-desc">UI / UX Design</p></div>
+        </div>
+        <div class="scroll-wrapper">
+            <button class="scroll-btn btn-prev" onclick="scrollGrid('grid-6', -1)">←</button>
+            <div class="work-grid" id="grid-6">
+                <a href="#" class="work-card"><div class="img-16-9"><img src="https://picsum.photos/seed/f1/800/450"></div><h4>占位项目 F-1</h4></a>
+            </div>
+            <button class="scroll-btn btn-next" onclick="scrollGrid('grid-6', 1)">→</button>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer-dark">
+    <p>© 2026 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<script>
+    function scrollGrid(gridId, direction) {
+        const grid = document.getElementById(gridId);
+        const scrollAmount = 445; 
+        grid.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
