@@ -4,10 +4,29 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "tsinghua",
+        title: "清华电子系文创产品",
+        date: "2024-10",
+        category: "品牌文创体系",
+        client: "清华大学电子工程系",
+        services: "文创产品开发",
+        role: "主案设计",
+        cover: "images/qinghuawenchuang/清华文创封面.jpg",
+        url: "project-tsinghua.html",
+        description: `本系列文创以清华电子系学科特色为核心，融合 AI、电路、建筑等元素，打造徽章、雨伞、魔方、拼图、帆布袋等产品。采用蓝紫渐变主色调，兼具科技感与人文底蕴，现已线下开售，传递电子系严谨创新的精神内核。`,
+        details: [
+            "images/qinghuawenchuang/清华文创1.jpg",
+            "images/qinghuawenchuang/清华文创2.jpg",
+            "images/qinghuawenchuang/清华文创3.jpg",
+            "images/qinghuawenchuang/清华文创4.jpg",
+            "images/qinghuawenchuang/清华文创5.jpg",
+            "images/qinghuawenchuang/清华文创6.jpg"
+        ]
+    },
+    {
         id: "guihuaju",
         title: "规划居定制酒 - 品牌文创体系设计",
         date: "2024-03",
-        // 🌟 已精准校正为你的纯中文板块名称：品牌文创体系
         category: "品牌文创体系",
         client: "规划居",
         services: "文创产品开发, 包装设计",
