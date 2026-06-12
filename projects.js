@@ -30,7 +30,7 @@ const ALL_PROJECTS = [
         date: "2022-03",
         category: "印刷物料设计 / Print & Layout",
         client: "米小圈品牌方",
-        services: "手册设计, 产品插画, 画册装订",
+        services: "手册设计, product插画, 画册装订",
         role: "主设计师",
         cover: "images/mixiaoquan/mixiaoquan封面.jpg",
         url: "project-mixiaoquan.html",
@@ -128,7 +128,8 @@ const ALL_PROJECTS = [
         id: "elementsclub",
         title: "Elements Club 品牌视觉系统设计",
         date: "2026-05",
-        category: "品牌 VIS / Visual Identity",
+        // 🌟 成功修改分类为：品牌全案 / 视觉识别
+        category: "品牌全案 / 视觉识别",
         client: "Elements Club 创始团队",
         services: "VIS 系统设计, 品牌标准色, 社交媒体规范",
         role: "主设计师",
