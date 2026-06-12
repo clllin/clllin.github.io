@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特变电工天津武清展区 - 项目详情</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        /* 详情页极简主义样式规范 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #fff; }
+        
+        /* 顶部返回面包屑 */
+        .nav-back { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .nav-back a { text-decoration: none; color: #666; font-size: 14px; letter-spacing: 0.5px; transition: 0.3s; }
+        .nav-back a:hover { color: #000; }
+        
+        /* 响应式内容容器 */
+        .project-container { max-width: 1000px; margin: 0 auto; padding: 0 5% 100px; }
+        .hero-info { margin-top: 60px; margin-bottom: 60px; }
+        
+        /* 分类胶囊标签 */
+        .tag { display: inline-block; background: #000; padding: 4px 12px; border-radius: 20px; font-size: 11px; color: #fff; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { font-size: 32px; margin-bottom: 24px; color: #000; font-weight: 600; letter-spacing: 0.5px; }
+        
+        /* 项目描述文案 */
+        .description { font-size: 15px; color: #555; max-width: 850px; margin-bottom: 60px; white-space: pre-wrap; text-align: justify; line-height: 1.8; }
+        
+        /* Meta 信息网格系统 */
+        .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; border-top: 1px solid #eee; padding-top: 40px; }
+        .meta-item label { display: block; font-size: 11px; color: #999; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+        .meta-item span { font-size: 14px; font-weight: 500; color: #222; }
+        
+        /* 图片瀑布流展示区 */
+        .detail-images { margin-top: 80px; }
+        .detail-images img { width: 100%; margin-bottom: 40px; border-radius: 12px; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
+        
+        footer { padding: 80px 5%; background: #111; color: #fff; text-align: center; font-size: 13px; letter-spacing: 1px; margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+<nav class="nav-back">
+    <a href="works.html">← BACK TO WORKS</a>
+    <span style="font-weight: 900; letter-spacing: 1px;">DESIGNER ALPHA</span>
+</nav>
+
+<div class="project-container" id="project-content"></div>
+
+<footer><p>© 2026 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p></footer>
+
+<script src="projects.js"></script>
+<script>
+    // 精准匹配当前项目的 id 数据
+    const projectData = ALL_PROJECTS.find(p => p.id === "tebiandiangong");
+    
+    if (projectData) {
+        const container = document.getElementById('project-content');
+        // 动态注入文本与 Meta 字段
+        container.innerHTML = `
+            <div class="hero-info">
+                <span class="tag">${projectData.category}</span>
+                <h1>${projectData.title}</h1>
+                <div class="description">${projectData.description}</div>
+                <div class="meta-grid">
+                    <div class="meta-item"><label>DATE</label><span>${projectData.date}</span></div>
+                    <div class="meta-item"><label>CLIENT</label><span>${projectData.client}</span></div>
+                    <div class="meta-item"><label>SERVICES</label><span>${projectData.services}</span></div>
+                    <div class="meta-item"><label>ROLE</label><span>${projectData.role}</span></div>
+                </div>
+            </div>
+            <div class="detail-images" id="image-gallery"></div>
+        `;
+        
+        // 动态循环渲染 details 数组中的 9 张平面及空间图
+        const gallery = document.getElementById('image-gallery');
+        projectData.details.forEach(imgUrl => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imgUrl;
+            imgElement.alt = projectData.title;
+            // 增加图片懒加载提升首屏打开速度
+            imgElement.loading = "lazy"; 
+            gallery.appendChild(imgElement);
+        });
+    } else {
+        // 容错处理
+        document.getElementById('project-content').innerHTML = `<p style="padding:100px 0; text-align:center; color:#999;">暂无相关项目数据</p>`;
+    }
+</script>
+</body>
+</html>
