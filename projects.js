@@ -17,7 +17,7 @@ const ALL_PROJECTS = [
         details: [
             "images/tebiandiangong/tebiandiangong1.png",
             "images/tebiandiangong/tebiandiangong2.png",
-            "images/tebiandiangong/tebiandiangong3.png",
+            "images/tebiandiangong/tebiandiangong3.jpg",
             "images/tebiandiangong/tebiandiangong4.jpg",
             "images/tebiandiangong/tebiandiangong5.jpg",
             "images/tebiandiangong/tebiandiangong6.jpg",
