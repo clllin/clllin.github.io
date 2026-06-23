@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海能源类展厅 - 项目详情</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; color: #333; background: #fff; }
+        .nav-back { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .nav-back a { text-decoration: none; color: #666; font-size: 14px; transition: 0.3s; }
+        .nav-back a:hover { color: #000; }
+        .project-container { max-width: 1000px; margin: 0 auto; padding: 0 5% 100px; }
+        .hero-info { margin-top: 60px; margin-bottom: 60px; }
+        .tag { display: inline-block; background: #000; padding: 4px 12px; border-radius: 20px; font-size: 11px; color: #fff; margin-bottom: 20px; letter-spacing: 1px; }
+        h1 { font-size: 32px; margin-bottom: 24px; color: #000; font-weight: 600; }
+        .description { font-size: 15px; color: #555; max-width: 850px; margin-bottom: 60px; line-height: 1.8; text-align: justify; }
+        .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; border-top: 1px solid #eee; padding-top: 40px; }
+        .meta-item label { display: block; font-size: 11px; color: #999; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+        .meta-item span { font-size: 14px; font-weight: 500; color: #222; }
+        .detail-images { margin-top: 80px; }
+        .detail-images img { width: 100%; margin-bottom: 40px; border-radius: 12px; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
+        footer { padding: 80px 5%; background: #111; color: #fff; text-align: center; font-size: 13px; margin-top: 100px; }
+    </style>
+</head>
+<body>
 
+<nav class="nav-back">
+    <a href="works.html">← BACK TO WORKS</a>
+    <span style="font-weight: 900; letter-spacing: 1px;">DESIGNER ALPHA</span>
+</nav>
+
+<div class="project-container" id="project-content"></div>
+
+<footer><p>© 2026 DESIGNER ALPHA. ALL RIGHTS RESERVED.</p></footer>
+
+<script src="projects.js"></script>
+<script>
+    // 关键步骤：这里的 id 必须与 projects.js 里的 id 一致
+    const projectData = ALL_PROJECTS.find(p => p.id === "shanghai-energy");
+    
+    if (projectData) {
+        const container = document.getElementById('project-content');
+        container.innerHTML = `
+            <div class="hero-info">
+                <span class="tag">${projectData.category}</span>
+                <h1>${projectData.title}</h1>
+                <div class="description">${projectData.description}</div>
+                <div class="meta-grid">
+                    <div class="meta-item"><label>DATE</label><span>${projectData.date}</span></div>
+                    <div class="meta-item"><label>CLIENT</label><span>${projectData.client}</span></div>
+                    <div class="meta-item"><label>SERVICES</label><span>${projectData.services}</span></div>
+                    <div class="meta-item"><label>ROLE</label><span>${projectData.role}</span></div>
+                </div>
+            </div>
+            <div class="detail-images" id="image-gallery"></div>
+        `;
+        
+        const gallery = document.getElementById('image-gallery');
+        projectData.details.forEach(imgUrl => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imgUrl;
+            imgElement.alt = projectData.title;
+            imgElement.loading = "lazy"; 
+            gallery.appendChild(imgElement);
+        });
+    }
+</script>
+</body>
+</html>
