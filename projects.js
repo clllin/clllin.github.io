@@ -11,11 +11,11 @@ const ALL_PROJECTS = [
         client: "能源行业客户",
         services: "展厅设计, 空间规划, 视觉导视系统",
         role: "主案设计师",
-        cover: "images/Shanghai/封面.jpg",
+        cover: "images/Shanghai/封面图.jpg", // 已修正
         url: "project-shanghai-energy.html",
         description: `上海能源类展厅 0-1 全流程落地项目，统筹项目全视觉平面工作，前期参与内容梳理策划，敲定各展区内容叙事与展陈呈现形式；搭建展厅专属 VI 视觉体系，统一全空间版式标准；主导全馆可视化大屏、交互屏幕内容规划与画面落地输出，制定整套视觉执行规范，把控所有图文、屏幕物料最终呈现效果。`,
         details: [
-            "images/Shanghai/封面.jpg",
+            "images/Shanghai/封面图.jpg", // 已修正
             "images/Shanghai/展厅照片1.jpg",
             "images/Shanghai/展厅照片11.jpg",
             "images/Shanghai/展厅照片2.jpg",
@@ -119,7 +119,7 @@ const ALL_PROJECTS = [
         client: "内蒙古文旅局",
         services: "品牌策略, 品牌全案, 视觉系统设计",
         role: "主案设计",
-        cover: "images/yunzhongshengle/%E4%BA%91%E4%B8%AD%E7%9B%9B%E4%B9%90%E5%B0%81%E9%9D%A2.jpg",
+        cover: "images/yunzhongshengle/云中盛乐封面.jpg",
         url: "project-yunzhong.html",
         description: `“云中盛乐”项目紧扣文化强国与文旅融合战略，以“历史文化 + 艺术创意 + 休闲度假”为核心模式，活化盛乐古邑文化遗产，植入演艺、沉浸体验、文创研发等业态，打造文旅融合创新标杆。LOGO以七彩渐变云为轮廓，融入百灵鸟意象，呼应内蒙古草原的灵动与盛乐文化底蕴。七种色彩既承载地域基因，也对应度假区七大游玩体系，串联游牧文化与现代体验，传递自然、人文与活力的融合之美。`,
         details: [
@@ -275,8 +275,8 @@ const ALL_PROJECTS = [
             "images/elementsclub/elementsclub1.jpg",
             "images/elementsclub/elementsclub2.jpg",
             "images/elementsclub/elementsclub3.jpg",
-            "images/elementsclub/elementsclub4jpg.jpg",
-            "images/elementsclub/elementsclub5jpg.jpg",
+            "images/elementsclub/elementsclub4.jpg", // 已修正拼写
+            "images/elementsclub/elementsclub5.jpg", // 已修正拼写
             "images/elementsclub/elementsclub6.jpg",
             "images/elementsclub/elementsclub7.jpg",
             "images/elementsclub/elementsclub8.jpg",
