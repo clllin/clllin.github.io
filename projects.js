@@ -4,28 +4,28 @@
  */
 const ALL_PROJECTS = [
     {
-        id: "shanghai-energy",
+        id: "Shanghai-energy",
         title: "上海能源类展厅——落地实拍",
         date: "2025-10",
         category: "展览展示",
         client: "能源行业客户",
         services: "展厅设计, 空间规划, 视觉导视系统",
         role: "主案设计师",
-        cover: "images/shanghai/封面图.jpg", // 已修正
-        url: "project-shanghai-energy.html",
+        cover: "images/Shanghai/封面图.jpg", // 已修正
+        url: "project-Shanghai-energy.html",
         description: `上海能源类展厅 0-1 全流程落地项目，统筹项目全视觉平面工作，前期参与内容梳理策划，敲定各展区内容叙事与展陈呈现形式；搭建展厅专属 VI 视觉体系，统一全空间版式标准；主导全馆可视化大屏、交互屏幕内容规划与画面落地输出，制定整套视觉执行规范，把控所有图文、屏幕物料最终呈现效果。`,
         details: [
-            "images/shanghai/封面图.jpg", // 已修正
-            "images/shanghai/展厅照片1.jpg",
-            "images/shanghai/展厅照片11.jpg",
-            "images/shanghai/展厅照片2.jpg",
-            "images/shanghai/展厅照片3.jpg",
-            "images/shanghai/展厅照片4.jpg",
-            "images/shanghai/展厅照片5.jpg",
-            "images/shanghai/展厅照片6.jpg",
-            "images/shanghai/展厅照片7.jpg",
-            "images/shanghai/展厅照片8.jpg",
-            "images/shanghai/展厅照片9.jpg"
+            "images/Shanghai/封面图.jpg", // 已修正
+            "images/Shanghai/展厅照片1.jpg",
+            "images/Shanghai/展厅照片11.jpg",
+            "images/Shanghai/展厅照片2.jpg",
+            "images/Shanghai/展厅照片3.jpg",
+            "images/Shanghai/展厅照片4.jpg",
+            "images/Shanghai/展厅照片5.jpg",
+            "images/Shanghai/展厅照片6.jpg",
+            "images/Shanghai/展厅照片7.jpg",
+            "images/Shanghai/展厅照片8.jpg",
+            "images/Shanghai/展厅照片9.jpg"
         ]
     },
     {
