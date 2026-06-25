@@ -4,6 +4,22 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "agri-brand-mp",
+        title: "农业品牌计划公众号",
+        date: "2024",
+        category: "交互体验",
+        client: "",
+        services: "",
+        role: "主设计",
+        cover: "images/nonage/农业公众号1.jpg",
+        url: "project-agri-brand.html",
+        description: "",
+        details: [
+            "images/nonage/农业公众号1.jpg",
+            "images/nonage/农业公众号2.jpg"
+        ]
+    },
+    {
         id: "Shanghai-energy",
         title: "上海能源类展厅——落地实拍",
         date: "2025-10",
@@ -191,7 +207,7 @@ const ALL_PROJECTS = [
         role: "主设计师",
         cover: "images/atpc/农贸促手册1.jpg",
         url: "project-atpc.html",
-        description: `画面采用中式水墨风格，以淡雅色彩和写意笔触勾勒山山、田园等自然景观，营造宁静悠远且具文化底蕴的氛围，契合农业自然、生态理念。`,
+        description: `画面采用中式水墨风格，以淡雅色彩 and 写意笔触勾勒山山、田园等自然景观，营造宁静悠远且具文化底蕴的氛围，契合农业自然、生态理念。`,
         details: [
             "images/atpc/农贸促手册1.jpg",
             "images/atpc/农贸促手册2.jpg",
