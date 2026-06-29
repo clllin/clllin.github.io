@@ -4,6 +4,28 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "lexiaoxing",
+        title: "体彩乐小星IP数字化品牌体验设计",
+        date: "2023-11",
+        category: "交互体验",
+        client: "中国体育彩票",
+        services: "UI/UX Design / IP Digital Branding / H5 Interaction",
+        role: "主设计",
+        cover: "images/ticai/体彩封面.jpg",
+        url: "project-lexiaoxing.html",
+        description: "本项目立足体彩用户全链路体验，打造两套乐小星数字化交互载体。专题页 “乐小星的家” 以四季视觉营造温馨沉浸式品牌空间，IP 形象贯穿全板块，衍生品专区打通线上线下体验，传递体彩公益内核。新春 H5 依托传统求签民俗设计体感交互，摇签、刮奖玩法提升互动趣味，国风画面搭配乐小星传递新春祝福。整套设计统一 IP 视觉语言，兼顾视觉观感、操作趣味与情感共鸣，以轻量化数字交互深化 IP 形象，实现品牌价值与公益理念的沉浸式传播。",
+        details: [
+            "images/ticai/体彩封面.jpg",
+            "images/ticai/体彩1.jpg",
+            "images/ticai/体彩2.jpg",
+            "images/ticai/体彩3.jpg",
+            "images/ticai/体彩4.jpg",
+            "images/ticai/体彩5.jpg",
+            "images/ticai/体彩6.jpg",
+            "images/ticai/体彩7.jpg"
+        ]
+    },
+    {
         id: "agri-brand-mp",
         title: "农业品牌计划公众号",
         date: "2024",
