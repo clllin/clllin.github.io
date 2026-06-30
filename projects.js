@@ -4,6 +4,26 @@
  */
 const ALL_PROJECTS = [
     {
+        id: "tsinghua-ppp",
+        title: "清华大学投融资政策研究中心PPP论坛",
+        category: "活动视觉",
+        date: "2024年12月",
+        client: "清华大学投融资政策研究中心",
+        role: "主案设计",
+        services: "活动主视觉设计 / 论坛全案物料规划 / 舞台舞美设计",
+        description: "主视觉以清华专属的渐变蓝紫为主色调，融合流线科技线条，塑造专业现代的财经论坛氛围。画面融入清华校门等建筑符号，与城市剪影光波元素隐喻产业、资本双向联动，整体版式舒展大气，适配展馆外立面大幅展示，兼顾远观识别度与近看文字细节，契合投融资政策论坛专业、开放、可持续的核心主题。",
+        cover: "images/qinghua/PPP论坛封面.jpg",
+        url: "project-tsinghua.html",
+        details: [
+            "images/qinghua/PPP论坛1.jpg",
+            "images/qinghua/PPP论坛2.jpg",
+            "images/qinghua/PPP论坛3.jpg",
+            "images/qinghua/PPP论坛4.jpg",
+            "images/qinghua/PPP论坛5.jpg",
+            "images/qinghua/PPP论坛6.jpg"
+        ]
+    },
+    {
         id: "lexiaoxing",
         title: "体彩乐小星IP数字化品牌体验设计",
         date: "2023-11",
@@ -49,11 +69,11 @@ const ALL_PROJECTS = [
         client: "能源行业客户",
         services: "展厅设计, 空间规划, 视觉导视系统",
         role: "主案设计师",
-        cover: "images/Shanghai/封面图.jpg", // 已修正
+        cover: "images/Shanghai/封面图.jpg",
         url: "project-Shanghai-energy.html",
         description: `上海能源类展厅 0-1 全流程落地项目，统筹项目全视觉平面工作，前期参与内容梳理策划，敲定各展区内容叙事与展陈呈现形式；搭建展厅专属 VI 视觉体系，统一全空间版式标准；主导全馆可视化大屏、交互屏幕内容规划与画面落地输出，制定整套视觉执行规范，把控所有图文、屏幕物料最终呈现效果。`,
         details: [
-            "images/Shanghai/封面图.jpg", // 已修正
+            "images/Shanghai/封面图.jpg",
             "images/Shanghai/展厅照片1.jpg",
             "images/Shanghai/展厅照片11.jpg",
             "images/Shanghai/展厅照片2.jpg",
@@ -313,8 +333,8 @@ const ALL_PROJECTS = [
             "images/elementsclub/elementsclub1.jpg",
             "images/elementsclub/elementsclub2.jpg",
             "images/elementsclub/elementsclub3.jpg",
-            "images/elementsclub/elementsclub4.jpg", // 已修正拼写
-            "images/elementsclub/elementsclub5.jpg", // 已修正拼写
+            "images/elementsclub/elementsclub4.jpg",
+            "images/elementsclub/elementsclub5.jpg",
             "images/elementsclub/elementsclub6.jpg",
             "images/elementsclub/elementsclub7.jpg",
             "images/elementsclub/elementsclub8.jpg",
