@@ -119,20 +119,9 @@
 
         <section id="work">
             <h2 class="section-label">Featured Projects</h2>
-            <div class="work-grid">
-                <a href="coffee.html" class="work-card">
-                    <div class="img-16-9"><img src="active-cover.jpg"></div>
-                    <h4>内蒙古露营小镇项目策划</h4>
-                </a>
-                <div class="work-card">
-                    <div class="img-16-9"><img src="https://images.unsplash.com/photo-1618761767630-0114736b193f?auto=format&fit=crop&q=80&w=1000"></div>
-                    <h4>品牌视觉重塑手册</h4>
-                </div>
-                <div class="work-card">
-                    <div class="img-16-9"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=1000"></div>
-                    <h4>极简主义网页排版研究</h4>
-                </div>
-            </div>
+            
+            <!-- 坑位已清空，现在由下面的 JS 脚本自动注入前 3 个项目 -->
+            <div class="work-grid" id="featured-projects-container"></div>
 
             <div class="view-all-container">
                 <a href="works.html" class="btn-all-works">查看全部作品 / View All Works</a>
@@ -145,11 +134,51 @@
         <p style="margin-top:20px; color:#bbb">Email: 13681217107@163.com</p>
     </footer>
 
+    <!-- 首先：引入您的核心数据文件 -->
+    <script src="projects.js"></script>
+
     <script>
-        // 简历点击展开逻辑
+        // 1. 简历点击展开逻辑（原汁原味保留）
         document.querySelectorAll('.resume-item').forEach(item => {
             item.addEventListener('click', () => item.classList.toggle('active'));
         });
+
+        // 2. 核心逻辑：全自动抓取最新的 3 个项目渲染到首页
+        function renderFeaturedProjects() {
+            const container = document.getElementById('featured-projects-container');
+            if (!container) return;
+
+            // 检查数据文件是否成功加载
+            if (typeof ALL_PROJECTS === 'undefined' || !Array.isArray(ALL_PROJECTS)) {
+                console.error("未能成功加载 projects.js 中的数据");
+                return;
+            }
+
+            // 获取前 3 个项目（如果数组长度不足3，则有多少取多少）
+            const featuredList = ALL_PROJECTS.slice(0, 3);
+
+            // 动态生成 HTML 内容
+            let htmlContent = '';
+            featuredList.forEach(project => {
+                // 安全处理：强制将 ID 转为小写以精准匹配物理文件名，防止大小写冲突
+                const safeFileName = `project-${project.id.toLowerCase()}.html`;
+                
+                htmlContent += `
+                    <a href="${safeFileName}" class="work-card">
+                        <div class="img-16-9">
+                            <img src="${project.cover}" alt="${project.title}">
+                        </div>
+                        <h4>${project.title}</h4>
+                    </a>
+                `;
+            });
+
+            // 把生成的 HTML 塞入首页坑位
+            container.innerHTML = htmlContent;
+        }
+
+        // 页面加载完成后立即执行渲染
+        document.addEventListener('DOMContentLoaded', renderFeaturedProjects);
     </script>
 </body>
 </html>
