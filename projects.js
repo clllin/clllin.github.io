@@ -3,17 +3,17 @@
  * 提示：新项目请写在数组的最前面，这样首页会自动显示最新作品
  */
 const ALL_PROJECTS = [
-    {
+{
         id: "tsinghua-ppp",
         title: "清华大学投融资政策研究中心PPP论坛",
         category: "活动视觉",
         date: "2024年12月",
         client: "清华大学投融资政策研究中心",
         role: "主案设计",
-        services: "活动主视觉设计 / 论坛全案活动物料规划 / ",
+        services: "活动主视觉设计 / 论坛全案物料规划 / 舞台舞美设计",
         description: "主视觉以清华专属的渐变蓝紫为主色调，融合流线科技线条，塑造专业现代的财经论坛氛围。画面融入清华校门等建筑符号，与城市剪影光波元素隐喻产业、资本双向联动，整体版式舒展大气，适配展馆外立面大幅展示，兼顾远观识别度与近看文字细节，契合投融资政策论坛专业、开放、可持续的核心主题。",
         cover: "images/qinghua/PPP论坛封面.jpg",
-        url: "project-tsinghua.html",
+        url: "project-tsinghua-ppp.html", // 👈 这一行精准修改为独立的文件名
         details: [
             "images/qinghua/PPP论坛1.jpg",
             "images/qinghua/PPP论坛2.jpg",
