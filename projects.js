@@ -19,7 +19,6 @@ const ALL_PROJECTS = [
             "images/qinghua/PPP论坛2.jpg",
             "images/qinghua/PPP论坛3.jpg",
             "images/qinghua/PPP论坛4.jpg",
-            "images/qinghua/PPP论坛5.jpg",
             "images/qinghua/PPP论坛6.jpg"
         ]
     },
